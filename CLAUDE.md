@@ -1,67 +1,30 @@
-# Example Project — Claude Standards
+# example-project
 
-## Initial Setup — ALWAYS DO THIS FIRST
+Standalone Java + docs project demonstrating a single-command build that compiles sources, runs tests, and renders AsciiDoc.
 
-Run `mvn validate` before any other work. This unpacks current build
-standards into `.claude/standards/`. Do not proceed without this step.
+## Build Standards
 
-Because this repo has no sibling parent in its local reactor, Maven
-resolves `network.ike.platform:ike-parent:1-SNAPSHOT` and
-`network.ike.docs:ike-doc-maven-plugin:1-SNAPSHOT` directly from the
-local repo (during development) or Nexus (once released). Run
-`mvn install` in `ike-docs` and `ike-platform` first if you haven't.
+Files in `.claude/standards/` are build artifacts unpacked from `ike-build-standards`. DO NOT edit or commit them. See the workspace root CLAUDE.md for details.
 
-After validate completes, read and follow these files in `.claude/standards/`:
-
-- MAVEN.md — Maven 4 build standards (always read)
-- IKE-MAVEN.md — IKE-specific Maven conventions (always read)
-
-Read these additional files when working on Java code:
-
-- JAVA.md — Java 25 standards
-- IKE-JAVA.md — IKE-specific Java patterns
-
-Read this file when working on AsciiDoc content:
-
-- IKE-DOC.md — Documentation project standards
-
-## Project Overview
-
-Standalone reference implementation demonstrating a Java project
-that ships both compiled code and documentation through a single
-`mvn verify` cycle.
-
-- **Artifact**: `network.ike.examples:example-project`
-- **Packaging**: `jar` (Java sources) plus the documentation pipeline
-  contributed by `ike-parent`'s `doc-pipeline` profile (file-activated
-  by `src/docs/asciidoc`)
-- **Parent**: `network.ike.platform:ike-parent:1-SNAPSHOT`
-- **Version**: `1-SNAPSHOT`
-
-### Release Cascade Position
-
-```
-ike-tooling → ike-docs → ike-platform → [doc-example, example-project] → ike-example-ws
-```
-
-## Key Build Commands
+## Build
 
 ```bash
-# HTML only (default):
-mvn clean verify
-
-# Prawn PDF:
-mvn clean verify -Dike.pdf.prawn
-
-# FOP PDF:
-mvn clean verify -Dike.pdf.fop
-
-# Multiple renderers:
-mvn clean verify -Dike.pdf.prawn -Dike.pdf.fop
+mvn clean verify -DskipTests -T4
 ```
 
-## Output Locations
+## Key Facts
 
-- Jar: `target/example-project-1-SNAPSHOT.jar`
-- HTML: `target/generated-docs/html/index.html`
-- PDF: `target/generated-docs/pdf-{renderer}/example-project.pdf`
+- GroupId: `network.ike.examples`
+- Version: `1-SNAPSHOT`
+- Uses `--enable-preview` (Java 25)
+- BOM: imports `dev.ikm.ike:ike-bom` for dependency version management
+
+## Prohibited Patterns
+
+- **Never use `maven-antrun-plugin`** — use a proper Maven goal or `exec-maven-plugin`
+- **Never use `build-helper-maven-plugin` for multi-execution property chaining** —
+  write a proper Maven goal in `ike-maven-plugin`
+- **Never embed shell commands inline in POM** — extract to a named script
+
+See `.claude/standards/` (after `mvn validate`) for full standards.
+See `CLAUDE-example-project.md` for project-specific notes.
