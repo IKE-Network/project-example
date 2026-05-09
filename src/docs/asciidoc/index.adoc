@@ -24,9 +24,13 @@ tests, and professional documentation generation in a single Maven module.
 
 The IKE Example Project demonstrates how Java projects use the
 IKE documentation pipeline.
-It inherits from `java-parent`,
-which provides both the Java 25 compiler configuration and the
-full AsciiDoc toolchain from `ike-parent`.
+It inherits from `ike-parent`,
+which provides the Java 25 compiler configuration, the full
+AsciiDoc toolchain, and the rest of the IKE build conventions
+through one parent declaration. (Earlier revisions split Java vs.
+doc concerns across `ike-parent` and a separate `java-parent`;
+the post-`IKE-Network/ike-issues#216` topology consolidates both
+into `ike-parent`.)
 
 For a comprehensive test of all pipeline features (diagrams,
 typography,
@@ -39,7 +43,7 @@ see the `doc-example` module instead.
 * JUnit 5 + AssertJ test patterns
 * Koncept macro integration with Java source
 * Including Java source in AsciiDoc documentation
-* Maven parent chain: `ike-parent` -> `java-parent` -> `example-project`
+* Maven parent chain: `network.ike.platform:ike-parent` -> `example-project`
 
 == Architecture
 
