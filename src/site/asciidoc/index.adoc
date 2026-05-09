@@ -37,7 +37,8 @@ shapes of IKE consumer:
 
 | link:https://ike.network/doc-example/[doc-example]
 | You're shipping a published document as the primary deliverable.
-  No Java compile path; uses `<packaging>ike-doc</packaging>`.
+  No Java compile path; uses `<packaging>pom</packaging>` and ships
+  the source as the `adoc` classifier (post-`IKE-Network/ike-issues#321`).
 |===
 
 For the workspace-aggregator template (one repo orchestrating
