@@ -47,3 +47,7 @@ ike꞉*.md
 # the *-draft goal and consumed by the matching *-publish goal)
 versions-upgrade-plan.yaml
 # END ike-managed
+
+# Build-output staging dir (rendered Maven site files; never source)
+examples/
+
