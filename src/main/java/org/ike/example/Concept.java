@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 IKE Community
+ * Copyright 2025 IKE Network
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ package org.ike.example;
  * @param preferredTerm          the preferred display term
  * @param definition             the natural language definition text
  *
- * @author IKE Community
+ * @author IKE Network
  * @version 1.0.0
  */
 public record Concept(

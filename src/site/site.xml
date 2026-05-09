@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2026 IKE Community
+  ~ Copyright 2026 IKE Network
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@
         <convertImagesToThumbnails>false</convertImagesToThumbnails>
         <setExplicitImageSize>false</setExplicitImageSize>
         <keywords>IKE, example, reference, Java, AsciiDoc,
-                   ike-parent, IKE Community</keywords>
+                   ike-parent, IKE Network</keywords>
     </custom>
 
     <bannerLeft name="example-project" href="index.html">

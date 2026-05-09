@@ -1,6 +1,6 @@
 # IKE Example Project
 
-Demonstration project showcasing the IKE Community Maven AsciiDoc pipeline with Java 25 development.
+Demonstration project showcasing the IKE Network Maven AsciiDoc pipeline with Java 25 development.
 
 ## Features
 

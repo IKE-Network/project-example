@@ -1,5 +1,5 @@
 = IKE Example Project Documentation
-:author: IKE Community
+:author: IKE Network
 :email: info@ike.network
 :revnumber: {project-version}
 :revdate: {docdate}
@@ -14,7 +14,7 @@
 
 [abstract]
 --
-This document demonstrates the IKE Community Maven AsciiDoc
+This document demonstrates the IKE Network Maven AsciiDoc
 pipeline integrated with a Java project.
 It shows how to combine Java source code,
 tests, and professional documentation generation in a single Maven module.
