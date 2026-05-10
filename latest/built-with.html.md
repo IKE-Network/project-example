@@ -6,7 +6,7 @@ canonical_url: https://github.com/IKE-Network/example-project/built-with.html
 
 # Built With
 
-Open-source software that `example-project` 4 depends on, links against, ships within, or invokes at runtime.
+Open-source software that `example-project` 5 depends on, links against, ships within, or invokes at runtime.
 
 Three layers of attribution ship with each release:
 
@@ -20,10 +20,10 @@ Direct dependencies of this module, grouped by SPDX expression. Generated from `
 
 | SPDX Expression | Components |
 | --- | --- |
-| `Apache-2.0` | 5 |
+| `Apache-2.0` | 6 |
 | `Apache-2.0 OR MIT License (DocBook XSL Stylesheets)` | 1 |
 | `OFL-1.1` | 1 |
-| **Total** | **7** |
+| **Total** | **8** |
 
 For full per-component detail (group, artifact, version, hashes, transitive deps), see [bom.json](bom.json)[1] or [licenses.html](licenses.html)[2].
 

@@ -12,7 +12,7 @@ The following is a list of compile dependencies for this project. These dependen
 
 | GroupId | ArtifactId | Version | Type | Licenses |
 | --- | --- | --- | --- | --- |
-| network.ike.docs | [minimal-fonts](https://github.com/IKE-Network/ike-minimal-fonts)[1] | 8 | zip | [SIL Open Font License 1.1](https://scripts.sil.org/OFL)[2] |
+| network.ike.docs | [minimal-fonts](https://github.com/IKE-Network/ike-minimal-fonts)[1] | 9 | zip | [SIL Open Font License 1.1](https://scripts.sil.org/OFL)[2] |
 
 ## [test](#test)
 
@@ -29,12 +29,13 @@ The following is a list of provided dependencies for this project. These depende
 
 | GroupId | ArtifactId | Version | Classifier | Type | Licenses |
 | --- | --- | --- | --- | --- | --- |
-| network.ike.docs | [docbook-xsl](https://github.com/IKE-Network/ike-docbook-xsl)[7] | 8 | - | jar | [MIT License (DocBook XSL Stylesheets)](https://github.com/docbook/xslt10-stylesheets/blob/master/xsl/COPYING)[8][Apache License 2.0 (IKE Customization Layer)](https://www.apache.org/licenses/LICENSE-2.0)[9] |
-| network.ike.docs | [ike-doc-resources](https://github.com/IKE-Network/ike-docs)[10] | 8 | - | jar | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
-| network.ike.tooling | [ike-build-standards](https://ike.network/ike-tooling/ike-build-standards/)[11] | 147 | asciidoctorconfig | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
-| network.ike.tooling | [ike-build-standards](https://ike.network/ike-tooling/ike-build-standards/)[11] | 147 | claude | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
-| network.ike.tooling | [ike-build-standards](https://ike.network/ike-tooling/ike-build-standards/)[11] | 147 | config | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
-| network.ike.tooling | [ike-build-standards](https://ike.network/ike-tooling/ike-build-standards/)[11] | 147 | site-theme | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
+| network.ike.docs | [docbook-xsl](https://github.com/IKE-Network/ike-docbook-xsl)[7] | 9 | - | jar | [MIT License (DocBook XSL Stylesheets)](https://github.com/docbook/xslt10-stylesheets/blob/master/xsl/COPYING)[8][Apache License 2.0 (IKE Customization Layer)](https://www.apache.org/licenses/LICENSE-2.0)[9] |
+| network.ike.docs | [ike-doc-resources](https://github.com/IKE-Network/ike-docs)[10] | 9 | - | jar | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
+| network.ike.tooling | [ike-build-standards](https://ike.network/ike-tooling/ike-build-standards/)[11] | 148 | asciidoctorconfig | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
+| network.ike.tooling | [ike-build-standards](https://ike.network/ike-tooling/ike-build-standards/)[11] | 148 | built-with | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
+| network.ike.tooling | [ike-build-standards](https://ike.network/ike-tooling/ike-build-standards/)[11] | 148 | claude | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
+| network.ike.tooling | [ike-build-standards](https://ike.network/ike-tooling/ike-build-standards/)[11] | 148 | config | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
+| network.ike.tooling | [ike-build-standards](https://ike.network/ike-tooling/ike-build-standards/)[11] | 148 | site-theme | zip | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
 
 # Project Transitive Dependencies
 
@@ -60,33 +61,33 @@ The following is a list of test dependencies for this project. These dependencie
 
 ## [Dependency Tree](#dependency-tree)
 
-- network.ike.examples:example-project:jar:4 ** 
+- network.ike.examples:example-project:jar:5 ** 
   
   | IKE Example Project |
   | --- |
   | **Description: **Example Java project demonstrating IKE documentation pipeline integration with Java source, tests, and Koncept macros. **URL: **[https://github.com/IKE-Network/example-project](https://github.com/IKE-Network/example-project)[17] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
   
-    - network.ike.tooling:ike-build-standards:zip:claude:147 (provided) ** 
+    - network.ike.tooling:ike-build-standards:zip:claude:148 (provided) ** 
       
       | IKE Build Standards |
       | --- |
       | **Description: **Versioned Claude instruction files for IKE projects. Modular standards (Maven, Java, IKE-specific) distributed as a classified Maven artifact. **URL: **[https://ike.network/ike-tooling/ike-build-standards/](https://ike.network/ike-tooling/ike-build-standards/)[11] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
-    - network.ike.tooling:ike-build-standards:zip:config:147 (provided) ** 
+    - network.ike.tooling:ike-build-standards:zip:config:148 (provided) ** 
       
       | IKE Build Standards |
       | --- |
       | **Description: **Versioned Claude instruction files for IKE projects. Modular standards (Maven, Java, IKE-specific) distributed as a classified Maven artifact. **URL: **[https://ike.network/ike-tooling/ike-build-standards/](https://ike.network/ike-tooling/ike-build-standards/)[11] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
-    - network.ike.docs:ike-doc-resources:jar:8 (provided) ** 
+    - network.ike.docs:ike-doc-resources:jar:9 (provided) ** 
       
       | IKE Documentation Resources |
       | --- |
       | **Description: **Shared build resources for the IKE documentation pipeline: assembly descriptors, PDF themes, renderer configurations, SVGO configs, and AsciiDoc shared docinfo. **URL: **[https://github.com/IKE-Network/ike-docs](https://github.com/IKE-Network/ike-docs)[10] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
-    - network.ike.docs:docbook-xsl:jar:8 (provided) ** 
+    - network.ike.docs:docbook-xsl:jar:9 (provided) ** 
       
       | IKE DocBook XSL Stylesheets |
       | --- |
       | **Description: **DocBook XSL 1.79.2 stylesheets with IKE FO customization layer. Ready-to-use artifact for the AsciiDoc → DocBook5 → XSL-FO → PDF pipeline. **URL: **[https://github.com/IKE-Network/ike-docbook-xsl](https://github.com/IKE-Network/ike-docbook-xsl)[7] **Project Licenses: **[MIT License (DocBook XSL Stylesheets)](https://github.com/docbook/xslt10-stylesheets/blob/master/xsl/COPYING)[8], [Apache License 2.0 (IKE Customization Layer)](https://www.apache.org/licenses/LICENSE-2.0)[9] |
-    - network.ike.docs:minimal-fonts:zip:8 (compile) ** 
+    - network.ike.docs:minimal-fonts:zip:9 (compile) ** 
       
       | IKE Minimal Fonts |
       | --- |
@@ -150,12 +151,17 @@ The following is a list of test dependencies for this project. These dependencie
             | Byte Buddy (without dependencies) |
             | --- |
             | **Description: **Byte Buddy is a Java library for creating Java classes at run time. This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space. **URL: **[https://bytebuddy.net/byte-buddy](https://bytebuddy.net/byte-buddy)[12] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
-    - network.ike.tooling:ike-build-standards:zip:site-theme:147 (provided) ** 
+    - network.ike.tooling:ike-build-standards:zip:site-theme:148 (provided) ** 
       
       | IKE Build Standards |
       | --- |
       | **Description: **Versioned Claude instruction files for IKE projects. Modular standards (Maven, Java, IKE-specific) distributed as a classified Maven artifact. **URL: **[https://ike.network/ike-tooling/ike-build-standards/](https://ike.network/ike-tooling/ike-build-standards/)[11] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
-    - network.ike.tooling:ike-build-standards:zip:asciidoctorconfig:147 (provided) ** 
+    - network.ike.tooling:ike-build-standards:zip:built-with:148 (provided) ** 
+      
+      | IKE Build Standards |
+      | --- |
+      | **Description: **Versioned Claude instruction files for IKE projects. Modular standards (Maven, Java, IKE-specific) distributed as a classified Maven artifact. **URL: **[https://ike.network/ike-tooling/ike-build-standards/](https://ike.network/ike-tooling/ike-build-standards/)[11] **Project Licenses: **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt)[4] |
+    - network.ike.tooling:ike-build-standards:zip:asciidoctorconfig:148 (provided) ** 
       
       | IKE Build Standards |
       | --- |
@@ -184,13 +190,14 @@ The following is a list of test dependencies for this project. These dependencie
 | byte-buddy-1.15.11.jar | 8.5 MB | 5890 | - | - | - | - |
 |    • Root | - | 2950 | 2897 | 38 | 1.5 | Yes |
 |    • Versioned | - | 2940 | 2898 | 39 | 1.8 | Yes |
-| docbook-xsl-8.jar | 25.8 MB | 1955 | 0 | 0 | - | - |
-| ike-doc-resources-8.jar | 21.8 kB | 31 | 0 | 0 | - | - |
-| minimal-fonts-8.zip | 3.1 MB | - | - | - | - | - |
-| ike-build-standards-147-asciidoctorconfig.zip | 0.2 kB | - | - | - | - | - |
-| ike-build-standards-147-claude.zip | 81 kB | - | - | - | - | - |
-| ike-build-standards-147-config.zip | 1.2 kB | - | - | - | - | - |
-| ike-build-standards-147-site-theme.zip | 3.4 kB | - | - | - | - | - |
+| docbook-xsl-9.jar | 25.8 MB | 1955 | 0 | 0 | - | - |
+| ike-doc-resources-9.jar | 21.8 kB | 31 | 0 | 0 | - | - |
+| minimal-fonts-9.zip | 3.1 MB | - | - | - | - | - |
+| ike-build-standards-148-asciidoctorconfig.zip | 0.2 kB | - | - | - | - | - |
+| ike-build-standards-148-built-with.zip | 3.5 kB | - | - | - | - | - |
+| ike-build-standards-148-claude.zip | 81 kB | - | - | - | - | - |
+| ike-build-standards-148-config.zip | 1.2 kB | - | - | - | - | - |
+| ike-build-standards-148-site-theme.zip | 3.4 kB | - | - | - | - | - |
 | apiguardian-api-1.1.2.jar | 6.8 kB | 9 | 3 | 2 | 1.6 | Yes |
 | assertj-core-3.27.3.jar | 1.4 MB | 881 | - | - | - | - |
 |    • Root | - | 877 | 838 | 27 | 1.8 | Yes |
@@ -205,7 +212,7 @@ The following is a list of test dependencies for this project. These dependencie
 | junit-platform-commons-6.0.0.jar | 171.1 kB | 103 | 87 | 10 | 17 | Yes |
 | junit-platform-engine-6.0.0.jar | 277.6 kB | 193 | 175 | 9 | 17 | Yes |
 | opentest4j-1.3.0.jar | 14.3 kB | 15 | 9 | 2 | 1.6 | Yes |
-| 18 | 40.3 MB | 9723 | 4587 | 117 | 17 | 9 |
+| 19 | 40.3 MB | 9723 | 4587 | 117 | 17 | 9 |
 | compile: 1 | compile: 3.1 MB | - | - | - | - | - |
-| provided: 6 | provided: 25.9 MB | provided: 1986 | - | - | - |
+| provided: 7 | provided: 25.9 MB | provided: 1986 | - | - | - |
 | test: 11 | test: 11.2 MB | test: 7737 | test: 4587 | test: 117 | 17 | test: 9 |
