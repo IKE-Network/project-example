@@ -54,8 +54,15 @@ ike-tooling -> ike-docs -> ike-platform -> [example-project, doc-example] -> ike
 
 `example-project` releases after `ike-platform` (whose `ike-parent`
 this project consumes) and after `ike-docs` (whose
-`ike-doc-maven-plugin` is declared `extensions=true` by `ike-parent`
-to activate the documentation pipeline).
+`ike-doc-maven-plugin` is declared as a regular managed plugin in
+`ike-parent` via `${ike-docs.version}`; the documentation pipeline
+activates through a profile when `src/docs/asciidoc/` exists).
+Earlier revisions used the `<extensions>true</extensions>` mechanism
+to register a custom `<packaging>ike-doc</packaging>` type at literal
+versions; that machinery was retired in
+https://github.com/IKE-Network/ike-issues/issues/321[ike-issues#321]
+in favor of a classifier-canonical doc shape
+(`<classifier>adoc</classifier><type>zip</type>`).
 
 == Project Structure
 
@@ -129,9 +136,11 @@ mvn site
 
 After inheriting, the project gets — for free — Java 25 compilation,
 GPG signing via Bouncy Castle, JaCoCo coverage, the AsciiDoc
-documentation pipeline, dependency-version management for the IKE
-ecosystem, and the `extensions=true` declarations for
-`ike-maven-plugin` and `ike-doc-maven-plugin`.
+documentation pipeline, and dependency-version management for the
+IKE ecosystem. `ike-maven-plugin` and `ike-doc-maven-plugin` are
+declared as ordinary managed plugins (no `extensions=true`,
+post-#321) and resolve via property indirection
+(`${ike-tooling.version}`, `${ike-docs.version}`).
 
 The doc pipeline activates automatically when `src/docs/asciidoc/`
 exists. No `<plugins>` block in this project's POM is needed for
