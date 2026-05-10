@@ -86,13 +86,13 @@
 					<div class="header-title">example-project</div>
 						<div class="header-subtitle">
 							<span class="version-prefix">Version</span>
-							<span class="version">7</span>
+							<span class="version">8</span>
 						</div>
 					</div>
 					<div class="navbar-brand header-xxs visible-xs">
 						<div class="header-title">example-project</div>
 						<div class="header-subtitle">
-							Version <strong>7</strong>
+							Version <strong>8</strong>
 						</div>
 					</div>
 					<form class="navbar-form site-search site-search-xs visible-xs" ng-show="showSearchInput">
@@ -152,11 +152,10 @@
 		<h5 class="text-uppercase">Reports</h5>
 
 <ul class="nav nav-pills nav-stacked animate">
-<li><a href="project-info.html"><i ng-class="hideSubItems ? 'fas fa-folder' : 'fas fa-folder-open'"></i> Project Information <span class="badge">8</span></a></li>
+<li><a href="project-info.html"><i ng-class="hideSubItems ? 'fas fa-folder' : 'fas fa-folder-open'"></i> Project Information <span class="badge">7</span></a></li>
 
 <ul class="nav nav-pills nav-stacked animate">
 <li><a href="summary.html"><i class="fas fa-file-alt"></i> Summary</a></li>
-<li><a href="dependencies.html"><i class="fas fa-file-alt"></i> Dependencies</a></li>
 <li><a href="dependency-info.html"><i class="fas fa-file-alt"></i> Maven Coordinates</a></li>
 <li><a href="dependency-management.html"><i class="fas fa-file-alt"></i> Dependency Management</a></li>
 <li><a href="plugins.html"><i class="fas fa-file-alt"></i> Plugins</a></li>
@@ -175,7 +174,7 @@
 
 					<div class="col-md-12">
 					<div class="page-header visible-print-block">
-							<h3><small>example-project</small><br/>							IKE Example Project 7
+							<h3><small>example-project</small><br/>							IKE Example Project 8
 							</h3>
 						</div>
 								<div class="home-xs visible-xs">
@@ -202,7 +201,7 @@
 										<li class="list-group-item"><i class="fas fa-folder-open"></i>Reports</li>
 												<a class="list-group-item" href="project-info.html">
 													<i class="fas fa-file-alt"></i>Project Information
-<span class="badge">8</span>												</a>
+<span class="badge">7</span>												</a>
 												<a class="list-group-item" href="project-reports.html">
 													<i class="fas fa-file-alt"></i>Project Reports
 <span class="badge">2</span>												</a>
@@ -268,7 +267,7 @@
  <div class="source">
   <pre class="prettyprint" copy-to-clipboard=""><code>ike-tooling -&gt; ike-docs -&gt; ike-platform -&gt; [example-project, doc-example] -&gt; ike-example-ws</code></pre>
  </div>
- <p><code>example-project</code> releases after <code>ike-platform</code> (whose <code>ike-parent</code> this project consumes) and after <code>ike-docs</code> (whose <code>ike-doc-maven-plugin</code> is declared <code>extensions=true</code> by <code>ike-parent</code> to activate the documentation pipeline).</p>
+ <p><code>example-project</code> releases after <code>ike-platform</code> (whose <code>ike-parent</code> this project consumes) and after <code>ike-docs</code> (whose <code>ike-doc-maven-plugin</code> is declared as a regular managed plugin in <code>ike-parent</code> via <code>12</code>; the documentation pipeline activates through a profile when <code>src/docs/asciidoc/</code> exists). Earlier revisions used the <code>&lt;extensions&gt;true&lt;/extensions&gt;</code> mechanism to register a custom <code>&lt;packaging&gt;ike-doc&lt;/packaging&gt;</code> type at literal versions; that machinery was retired in <a href="https://github.com/IKE-Network/ike-issues/issues/321" class="externalLink">ike-issues#321</a><sup class="visible-print-inline">[3]</sup> in favor of a classifier-canonical doc shape (<code>&lt;classifier&gt;adoc&lt;/classifier&gt;&lt;type&gt;zip&lt;/type&gt;</code>).</p>
 </div>
 <div>
  <h2 id="project-structure"><a href="#project-structure"></a><a id="project-structure"></a>Project Structure</h2>
@@ -332,7 +331,7 @@ mvn site</code></pre>
     <span class="tag">&lt;version&gt;</span>6<span class="tag">&lt;/version&gt;</span>
 <span class="tag">&lt;/parent&gt;</span></code></pre>
  </div>
- <p>After inheriting, the project gets — for free — Java 25 compilation, GPG signing via Bouncy Castle, JaCoCo coverage, the AsciiDoc documentation pipeline, dependency-version management for the IKE ecosystem, and the <code>extensions=true</code> declarations for <code>ike-maven-plugin</code> and <code>ike-doc-maven-plugin</code>.</p>
+ <p>After inheriting, the project gets — for free — Java 25 compilation, GPG signing via Bouncy Castle, JaCoCo coverage, the AsciiDoc documentation pipeline, and dependency-version management for the IKE ecosystem. <code>ike-maven-plugin</code> and <code>ike-doc-maven-plugin</code> are declared as ordinary managed plugins (no <code>extensions=true</code>, post-#321) and resolve via property indirection (<code>150</code>, <code>12</code>).</p>
  <p>The doc pipeline activates automatically when <code>src/docs/asciidoc/</code> exists. No <code>&lt;plugins&gt;</code> block in this project’s POM is needed for documentation — the parent profile handles it.</p>
 </div>
 <div>
@@ -381,19 +380,19 @@ mvn site</code></pre>
   <tbody>
    <tr class="b">
     <td style="text-align: left;">Source repository</td>
-    <td><a href="https://github.com/IKE-Network/example-project" class="bare">https://github.com/IKE-Network/example-project</a><sup class="visible-print-inline">[3]</sup></td>
+    <td><a href="https://github.com/IKE-Network/example-project" class="bare">https://github.com/IKE-Network/example-project</a><sup class="visible-print-inline">[4]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">Cross-project issue tracker</td>
-    <td><a href="https://github.com/IKE-Network/ike-issues" class="bare externalLink">https://github.com/IKE-Network/ike-issues</a><sup class="visible-print-inline">[4]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-issues" class="bare externalLink">https://github.com/IKE-Network/ike-issues</a><sup class="visible-print-inline">[5]</sup></td>
    </tr>
    <tr class="b">
     <td style="text-align: left;">IKE Network landing page</td>
-    <td><a href="https://ike.network/" class="bare">https://ike.network/</a><sup class="visible-print-inline">[5]</sup></td>
+    <td><a href="https://ike.network/" class="bare">https://ike.network/</a><sup class="visible-print-inline">[6]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">IKE Platform (parent POM, BOM, workspace plugin)</td>
-    <td><a href="https://ike.network/ike-platform/" class="bare">https://ike.network/ike-platform/</a><sup class="visible-print-inline">[6]</sup></td>
+    <td><a href="https://ike.network/ike-platform/" class="bare">https://ike.network/ike-platform/</a><sup class="visible-print-inline">[7]</sup></td>
    </tr>
    <tr class="b">
     <td style="text-align: left;">Sibling: doc-only template</td>
@@ -422,13 +421,14 @@ mvn site</code></pre>
 								<ul class="list-unstyled">
 								<li>[1] https://ike.network/doc-example/</li>
 								<li>[2] https://ike.network/ike-example-ws/</li>
-								<li>[3] https://github.com/IKE-Network/example-project</li>
-								<li>[4] https://github.com/IKE-Network/ike-issues</li>
-								<li>[5] https://ike.network/</li>
-								<li>[6] https://ike.network/ike-platform/</li>
+								<li>[3] https://github.com/IKE-Network/ike-issues/issues/321</li>
+								<li>[4] https://github.com/IKE-Network/example-project</li>
+								<li>[5] https://github.com/IKE-Network/ike-issues</li>
+								<li>[6] https://ike.network/</li>
+								<li>[7] https://ike.network/ike-platform/</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-05-10 08:06:25 -0700</strong></div>
+<div class="date">Date: <strong>2026-05-10 10:29:47 -0700</strong></div>
 						</div>
 						</div>
 					</div>
@@ -507,7 +507,7 @@ mvn site</code></pre>
 	<footer class="footer">
 
 		<p class="footer-title" ng-class="{'text-center': $matchMedia.size == 'xs'}">
-			<strong>example-project 7</strong>
+			<strong>example-project 8</strong>
 			<span class="hidden-xs">|</span><br class="hidden-sm hidden-md hidden-lg"/>
 			Documentation as of <strong><time datetime="2026-05-10">2026-05-10</time></strong>
 		</p>
@@ -594,19 +594,6 @@ angular.module("sentry.site").constant("SITE_MENU", [
 {
 	path: "summary.html",
 	title: "Summary",
-	parents: [
-		{
-			title: "Reports"
-		},
-		{
-			path: "project-info.html",
-			title: "Project Information"
-		}
-	]
-},
-{
-	path: "dependencies.html",
-	title: "Dependencies",
 	parents: [
 		{
 			title: "Reports"

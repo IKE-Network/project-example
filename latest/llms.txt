@@ -9,13 +9,13 @@
 
 ## Other
 
+- [Dependencies (SBOM)](https://github.com/IKE-Network/example-project/dependencies.html.md)
 - [Licenses (SPDX)](https://github.com/IKE-Network/example-project/licenses.html.md)
 - [Built With](https://github.com/IKE-Network/example-project/built-with.html.md)
 
 ## Reports
 
 - [Project Summary](https://github.com/IKE-Network/example-project/summary.html.md)
-- [Project Dependencies](https://github.com/IKE-Network/example-project/dependencies.html.md)
 - [Maven Coordinates](https://github.com/IKE-Network/example-project/dependency-info.html.md)
 - [Project Dependency Management](https://github.com/IKE-Network/example-project/dependency-management.html.md)
 - [Project Plugins](https://github.com/IKE-Network/example-project/plugins.html.md)
