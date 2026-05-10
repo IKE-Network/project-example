@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom serialNumber="urn:uuid:a4809aa1-0b6d-3807-8f40-fb2a84f1410a" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+<bom serialNumber="urn:uuid:83381a0a-274e-3c22-af46-2e1de72b170b" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
   <metadata>
     <lifecycles>
       <lifecycle>
@@ -27,11 +27,11 @@
         </component>
       </components>
     </tools>
-    <component type="library" bom-ref="pkg:maven/network.ike.examples/example-project@11?type=jar">
+    <component type="library" bom-ref="pkg:maven/network.ike.examples/example-project@12?type=jar">
       <publisher>IKE Network</publisher>
       <group>network.ike.examples</group>
       <name>example-project</name>
-      <version>11</version>
+      <version>12</version>
       <description>Example Java project demonstrating IKE documentation pipeline
         integration with Java source, tests, and Koncept macros.</description>
       <licenses>
@@ -39,7 +39,7 @@
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.examples/example-project@11?type=jar</purl>
+      <purl>pkg:maven/network.ike.examples/example-project@12?type=jar</purl>
       <externalReferences>
         <reference type="website">
           <url>https://github.com/IKE-Network/example-project</url>
@@ -56,31 +56,31 @@
     </properties>
   </metadata>
   <components>
-    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=claude&amp;type=zip">
+    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=claude&amp;type=zip">
       <publisher>IKE Network</publisher>
       <group>network.ike.tooling</group>
       <name>ike-build-standards</name>
-      <version>151</version>
+      <version>152</version>
       <description>Versioned Claude instruction files for IKE projects.
         Modular standards (Maven, Java, IKE-specific) distributed
         as a classified Maven artifact.</description>
       <scope>required</scope>
       <hashes>
-        <hash alg="MD5">02a333028cc8b32038faa4de2dd39c30</hash>
-        <hash alg="SHA-1">a12f0cee4eaa8a116d2a1a8f97f4956b351eb3bb</hash>
-        <hash alg="SHA-256">3bf98918f90608627757b53f08bbdea29be045d29913c86544817774899175c5</hash>
-        <hash alg="SHA-512">0daae9ff164fd35bfbf086fe152d877b9762d52e0198f69dd2e434fb3e8627aadb994854f28395f47e0e210a7b2be5c984a055b364c5bbb04647fe7b5be24d5a</hash>
-        <hash alg="SHA-384">900ee0addae1089d442cc0f9180b3be830488901354bab31f1a4e8641d84f978c5ec383be3587d1a559f2606a5553e03</hash>
-        <hash alg="SHA3-384">e5a246df9648cbef1a9472144f6cfaa3df7d0bb82f6631030cc5105bc0d9de360539b2bbc051be79b30c91f46ff7d465</hash>
-        <hash alg="SHA3-256">3d0326a8e76c94c975025e372250baf16da0444aea63662239ba0c65941d4753</hash>
-        <hash alg="SHA3-512">40b0303be6002c92e1f145cbb7d0d7fa187554ef65f3db9589530c476af21f7b76f4b6051f128fe5214529fc201e1b6dc8d7d91ee9a60ce53435aaf7daa09d22</hash>
+        <hash alg="MD5">69d39a849ee10ac8ddea8945bbee1b2a</hash>
+        <hash alg="SHA-1">529dac03d3052177374baa7d769722bb804fe3da</hash>
+        <hash alg="SHA-256">a39fe71ff9d3e2287a480c2335df7d171b9033175a58b3fc6fe95d82fa8225bc</hash>
+        <hash alg="SHA-512">9626cb8afebe0f1abea3f641bf606f29cec9b310dbca92bf215bb3faba207a835c2bf7a6ab4acb69ac2678dba54282b4a097d5dd68dbb2836c2c05d0439e345c</hash>
+        <hash alg="SHA-384">c6fc0ae350a2b19c8928b0c1c83af5fd2859e96f307c3c9b5cb3e6b0f18f0f5347213d08a2db3ad772c50e270432a833</hash>
+        <hash alg="SHA3-384">f99442051d1beb676fbf29e6e6a3e41f6093e74f6dc67500558e720adda1a167536af093310b10b0e8b77e4b1f8f4a23</hash>
+        <hash alg="SHA3-256">0f399d0c86edc1beac7c9c7f1355d467c66ed4bae1cb4f58e3e4ac3ce5768d22</hash>
+        <hash alg="SHA3-512">04682b353c6cc755b6eb864ae383359d8b9558fe052895e7f66c583c85056cd5f9c44401423956853988a52f83a8e18049b3d7dee8262c97c4ba480740d16b0e</hash>
       </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=claude&amp;type=zip</purl>
+      <purl>pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=claude&amp;type=zip</purl>
       <externalReferences>
         <reference type="website">
           <url>https://ike.network/ike-tooling/ike-build-standards/</url>
@@ -90,31 +90,31 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=config&amp;type=zip">
+    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=config&amp;type=zip">
       <publisher>IKE Network</publisher>
       <group>network.ike.tooling</group>
       <name>ike-build-standards</name>
-      <version>151</version>
+      <version>152</version>
       <description>Versioned Claude instruction files for IKE projects.
         Modular standards (Maven, Java, IKE-specific) distributed
         as a classified Maven artifact.</description>
       <scope>required</scope>
       <hashes>
-        <hash alg="MD5">0a95a2d5c13254f32ff0a71af81b9268</hash>
-        <hash alg="SHA-1">345f0dd9f9639da44ef3f7aabb42992c26b57306</hash>
-        <hash alg="SHA-256">29a28913615fcc419d2715ff33fe4698cf1fe8644f7d014f38a7fea318ff2850</hash>
-        <hash alg="SHA-512">3a6c68282c9561f9f14dfd03db14dd475732657b0e05a9bce20443b3962d8c9f50c9799e9f7bf8c9c50e56beb637ab9c0f4351bed3149cbc60bb02b5aa13f14a</hash>
-        <hash alg="SHA-384">bdff081e6206d051abb9bfba9260f69b40c1bd3d7b231231026480dc7da2b351034705cb810d9c20539ffa0cefd860e9</hash>
-        <hash alg="SHA3-384">3d04873772fa01970e00c72bc7bf191fd818e476a21671103441e1f38569917261132891d4ae4223208ef8230f66b25c</hash>
-        <hash alg="SHA3-256">b4b87225f3f35a8872b66ec664550392d26a8c390bed79c61d874d8ad11aa8d8</hash>
-        <hash alg="SHA3-512">f82f086a8c1424dd6f5cbacd800d2dfd426e3a6c1e100bf91fe421b9168fc7f9d28bec2533a955feadaf3b278032d5bfecbd7adb06ae94646e68556ea101d861</hash>
+        <hash alg="MD5">3c54df99ac061a9bc00a925501362f84</hash>
+        <hash alg="SHA-1">5eb4b48ca0510deaecd29203a777b976dd7a6100</hash>
+        <hash alg="SHA-256">ad3f6503929c31dd7b72cb4a991335a77d4836b27e67b9abbbc2c1defecb74be</hash>
+        <hash alg="SHA-512">ed09b150dfb89610c42b812c8788bea66998ec98a59789fb4cda14a7e47f13a0ee181cd581bb38b7358f1f5fc6577bc9c632c46c001cdaa305056a867f057643</hash>
+        <hash alg="SHA-384">fba28bc2b27bf59fc92341218448eeafab3f4ae04f680df3aac8cf6df379dbaf0e435eded0ac4252191b50af78bae69f</hash>
+        <hash alg="SHA3-384">1322adee979c4a1160de90fef3bb1752e800d14085a4f8fa7fe530270e50371ba6bd0566f4e5d8f67fd8a26ad33e0544</hash>
+        <hash alg="SHA3-256">b2977c2d9ce2c2dc52c6ebceef3ef0bc7f50429d4faa9cd54e1938644a957bfe</hash>
+        <hash alg="SHA3-512">d5da71745d8deb7b4fc2631a6e9da16d8814daf7ebcc12ce0ad943e96fbfbb7421e5ec47a2685e3e2b39ee9a15b26f08bdb2205aa231b6927012fa1a64392598</hash>
       </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=config&amp;type=zip</purl>
+      <purl>pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=config&amp;type=zip</purl>
       <externalReferences>
         <reference type="website">
           <url>https://ike.network/ike-tooling/ike-build-standards/</url>
@@ -124,31 +124,31 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="pkg:maven/network.ike.docs/ike-doc-resources@13?type=jar">
+    <component type="library" bom-ref="pkg:maven/network.ike.docs/ike-doc-resources@14?type=jar">
       <publisher>IKE Network</publisher>
       <group>network.ike.docs</group>
       <name>ike-doc-resources</name>
-      <version>13</version>
+      <version>14</version>
       <description>Shared build resources for the IKE documentation pipeline:
         assembly descriptors, PDF themes, renderer configurations,
         SVGO configs, and AsciiDoc shared docinfo.</description>
       <scope>required</scope>
       <hashes>
-        <hash alg="MD5">a559d0a18a32e61f4291b46e547e387e</hash>
-        <hash alg="SHA-1">80a650efb0920bdd46bddff34f29c8543b3348b4</hash>
-        <hash alg="SHA-256">91ff72033c87f0dbffc3e88d0295307b2b117e629a873a4edea16d53b915ecda</hash>
-        <hash alg="SHA-512">9cd2961590dee6bbbe0eebba1150d195d91893056eef15d725ac434e0f0b6533faf08f5437cf6ce2af974f44661cca84ecad0368aa5682ffd64c034942cfe98d</hash>
-        <hash alg="SHA-384">771d0d0efe92212ec84d09b840e9e7b1d6e434d1b7acc4b4efb738f869e506301031831b779d0401e7b138053b81de57</hash>
-        <hash alg="SHA3-384">9e0b93085a66ec1ca3858871c8f58fdc1b5573884fc76920d1e04b981505490a93fc4365781581a2243cb9804a00d4a9</hash>
-        <hash alg="SHA3-256">42e4672c81cb675408e608aed50cf052db5880243afbbf050aee7ff2e3ab4abe</hash>
-        <hash alg="SHA3-512">337be753fd1edbfa441ff5fd0aa79ad8ab5bae48ffb6ca3a3d4398365ffab338dfa7fc87e0f8575eb2effa8cb16d8ff737b7ebb3f8be1e66e704a7764a5ea3c3</hash>
+        <hash alg="MD5">f5b365e1d5222605320b434dc19285a8</hash>
+        <hash alg="SHA-1">14fde6dbcb9fea684e507bf4e6c013c9da78ac47</hash>
+        <hash alg="SHA-256">dd0582f0fb82b96c5233d496f280bd977b0aa2482098cdba4366a4d0662a7a2b</hash>
+        <hash alg="SHA-512">b5efdcfefe73426c5c5021b62dcc20c5af119cb6e0b5338ccafec64fef01ab450ab473c1d69eed338f4fa6286c51141374b0838d4cf3f7b1075b2e8dc9c3e91d</hash>
+        <hash alg="SHA-384">479428c3ffe0a7b0bf1f7fea7646e06620d52d60cca3c361375e2aac8415683935b98b3ddafdfeb8e4dd249cad8a6acb</hash>
+        <hash alg="SHA3-384">95aa8d1a976b8f8eee41c4039f5679f329dfb710f92597bdc9addf65aa9458872ca970faeb62f79932d1f381e937b403</hash>
+        <hash alg="SHA3-256">ec1c4cfee852680805b8d99c5ab624c321dbc7a0d9e8d7813b1884b438896f27</hash>
+        <hash alg="SHA3-512">0eacb10f43d9a943c3e6d629b10719428c38b12611f1ccc0d539f1d75a2b0f047a0eda1328319e8a1d0d9d3a1476d5cbdcbaeac0300de44887770a66c28b1316</hash>
       </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.docs/ike-doc-resources@13?type=jar</purl>
+      <purl>pkg:maven/network.ike.docs/ike-doc-resources@14?type=jar</purl>
       <externalReferences>
         <reference type="website">
           <url>https://github.com/IKE-Network/ike-docs</url>
@@ -158,23 +158,23 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="pkg:maven/network.ike.docs/docbook-xsl@13?type=jar">
+    <component type="library" bom-ref="pkg:maven/network.ike.docs/docbook-xsl@14?type=jar">
       <publisher>IKE Network</publisher>
       <group>network.ike.docs</group>
       <name>docbook-xsl</name>
-      <version>13</version>
+      <version>14</version>
       <description>DocBook XSL 1.79.2 stylesheets with IKE FO customization layer.
         Ready-to-use artifact for the AsciiDoc → DocBook5 → XSL-FO → PDF pipeline.</description>
       <scope>required</scope>
       <hashes>
-        <hash alg="MD5">f29b66b8aaeda8a950f1c2cba9c7fc7d</hash>
-        <hash alg="SHA-1">a826f673ddfc9c9dbd13e9648b3cbd3154b601ec</hash>
-        <hash alg="SHA-256">e7fb41478a0d2c16ac909b3b12a17896da76bbf96897fd0bf2c709069dac9de1</hash>
-        <hash alg="SHA-512">7f3599219e1edd0d8bfe8d77cf66cf97b84834b1b6830381580232ef03b129f3b81765d8e3173e7999c8197286d87a21ce8416e75c4812e0e69c840ff50771f8</hash>
-        <hash alg="SHA-384">31d0fc3554fe7960aeb10cd75ffa1ecf731aa2fae6d4caeba94e9181f0e8ab0e0d4cfc8169e8333780abbac562223d8a</hash>
-        <hash alg="SHA3-384">10619dc2876683d390f80a825969be6eb1f896bdaa0d43d4e5fb531a844dee456622f64335df7a06d9b03b41c4c7d7a6</hash>
-        <hash alg="SHA3-256">10195f088d1cdaf9b181e6e6cfd18daa8f1d36cc1b6476911d117ad250dc6fba</hash>
-        <hash alg="SHA3-512">1634cc291be399f581d0190d641bd34510187c16779a60225f4b37cad4c24e253464adafdfb8b5208e8c291bc3286f69b1c83b216300b6aee4a4b7b24b91db5f</hash>
+        <hash alg="MD5">fdbc6132d0766ac49fec3205c7a638f8</hash>
+        <hash alg="SHA-1">dd403abd78d311e68348277842377b9479407e1a</hash>
+        <hash alg="SHA-256">6dd769fe62c871ccdab6ef3717cbf2dc4f2c0b48c5349bc0f3cd4ce5c72c1a2b</hash>
+        <hash alg="SHA-512">8295c92555ec17ca977c2abc0f9b560c88af1b454fca467921930fe7dc2eda36ceace7cf3e862ee158fc07629678b4ad9928907e36473916aa5e0d909ad78bc2</hash>
+        <hash alg="SHA-384">318929a4458bec360fc5e5104ac89b9172c63e622a48c7e9f9de283222d1165084ddb55739f2f2430f3f74c3ccb0f7c2</hash>
+        <hash alg="SHA3-384">f91a9f16bbdb8e2862b3ec62deb456b284c74e9f4864cbeb313a12bc7682929d64e554e3a11b53d04494c872b7e4afe0</hash>
+        <hash alg="SHA3-256">890c890579c09d8bb2d5d8c6991decfdda7b415e91f60dd3206a01ed47b09f4f</hash>
+        <hash alg="SHA3-512">1de4424906c5e6682dab22ab9abf161487907f44d2ead76dd9558441070474715ff5bd6c6945c9e9493cebc1234cbfdb478c2e68c2158452e7fc250127877f28</hash>
       </hashes>
       <licenses>
         <license>
@@ -186,7 +186,7 @@
           <url>https://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.docs/docbook-xsl@13?type=jar</purl>
+      <purl>pkg:maven/network.ike.docs/docbook-xsl@14?type=jar</purl>
       <externalReferences>
         <reference type="website">
           <url>https://github.com/IKE-Network/ike-docbook-xsl</url>
@@ -196,22 +196,22 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="pkg:maven/network.ike.docs/minimal-fonts@13?type=zip">
+    <component type="library" bom-ref="pkg:maven/network.ike.docs/minimal-fonts@14?type=zip">
       <publisher>IKE Network</publisher>
       <group>network.ike.docs</group>
       <name>minimal-fonts</name>
-      <version>13</version>
+      <version>14</version>
       <description>Minimal Noto font subset for IKE documentation (~4MB)</description>
       <scope>required</scope>
       <hashes>
-        <hash alg="MD5">1e0f1450116e8c3537fc5096abf81ea0</hash>
-        <hash alg="SHA-1">c411f92efbcc1d843bff4adb2eb9d99cbccf2407</hash>
-        <hash alg="SHA-256">b70747b132e1577d249c641fc17d47b28c5522938a677e1c43d9ff79b60d81c1</hash>
-        <hash alg="SHA-512">835656d694cf91c841fb0411db161d3f9fa2b033a995b517b2c5caa6a5d703859cc964323ad16ba4543ba37e737b1abf1e928fc0973d4073bf1758d81d21e496</hash>
-        <hash alg="SHA-384">9fa8536eb2ab47e79c0576f823d721fca391a6c11f2357161da5de4689ec8f66bd7177621c8e972b91cb1ed5f7cfcd05</hash>
-        <hash alg="SHA3-384">de00f6f5b2c9837875e537dcf6cd2b6ed76360403aaaa19012bb70c14f64dd7d21c2135da4ede3caedd67feedd35561f</hash>
-        <hash alg="SHA3-256">4781379b4b6f47f7f545682a24c71f264058fdd1116a61b774d89152ac3404b6</hash>
-        <hash alg="SHA3-512">edc79d2a22605a56c2a75b9de71349c1f811d7ef29ebf3548a2fe104b3ac3d9bd2f2b14a3fc777a31739cee01430447580f7da199b09e52ad2c62ba6ba9c72f9</hash>
+        <hash alg="MD5">55f4b238bbb3dca224e5c78fee18fc06</hash>
+        <hash alg="SHA-1">67b6ce641dac05bccfeea93167a0207df2174edc</hash>
+        <hash alg="SHA-256">934232a21d66ddb5a76bdeb2e68874d47e915feea7a165b8dbfac230ac8cff57</hash>
+        <hash alg="SHA-512">c96aab9d594cb93c4880409c835dd39e6fee8045bdcdc353dc99c16c175fb9552fb51ab4222222fd73b087884067fb240c427d771ff4a19a3573f01cb2b82252</hash>
+        <hash alg="SHA-384">237a5d10e8b817f3404930f758cac5bb0309423a09898ba4f8d239def575f5641f05cc7ba58b3354f08c898b7bab2c55</hash>
+        <hash alg="SHA3-384">dc71171f4efb655f3b6b3009727bcdf2efe4ac44554c6ceca46300a8bf09e8567941cf84c5a9a23d91dcb053b4121bb5</hash>
+        <hash alg="SHA3-256">ab8c5ac1ff2ae46fa3dfccb879a32f3bab4f708abef59202e8f069304f1270d5</hash>
+        <hash alg="SHA3-512">b8ecebb967ee3d86b6d1e452c55ca303acf7fe9c221825db3fe7bb3a7bfa5d90c759b1c570d938bab6f138d9b6199869feefacbf9ed8c97e228f661ebcafba28</hash>
       </hashes>
       <licenses>
         <license>
@@ -219,7 +219,7 @@
           <url>http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web</url>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.docs/minimal-fonts@13?type=zip</purl>
+      <purl>pkg:maven/network.ike.docs/minimal-fonts@14?type=zip</purl>
       <externalReferences>
         <reference type="website">
           <url>https://github.com/IKE-Network/ike-minimal-fonts</url>
@@ -229,31 +229,31 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=scaffold&amp;type=zip">
+    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=scaffold&amp;type=zip">
       <publisher>IKE Network</publisher>
       <group>network.ike.tooling</group>
       <name>ike-build-standards</name>
-      <version>151</version>
+      <version>152</version>
       <description>Versioned Claude instruction files for IKE projects.
         Modular standards (Maven, Java, IKE-specific) distributed
         as a classified Maven artifact.</description>
       <scope>required</scope>
       <hashes>
-        <hash alg="MD5">0ffe2e7e877ace9ce57046453b3f44da</hash>
-        <hash alg="SHA-1">9fab4bbbe01e3ce8c7d258318b1598b66e0d417f</hash>
-        <hash alg="SHA-256">b2c0de6e456713dd8cc1a624685cb972c7de1edfc09aadfd55eb1c2f5b6c615d</hash>
-        <hash alg="SHA-512">fa1e516d5faf3793e270725841f8b2d761b59546c9631b9eefceb13de8a467666594b06ccc77e111ab3366e57c769f6d55d8e6ea9fa529e3de00cc50a27bac88</hash>
-        <hash alg="SHA-384">97832505fbd12b4f56452283a755bf0b05385e96e13c046196868c2c49aa85f2fc0ce0e430f84873b2b9d21c10293ff5</hash>
-        <hash alg="SHA3-384">5d1c927d49e8adc298a5814f4834f001219ac27d7e4929023b2425203d37950463860af44b06e4fb985030b8eed0ded1</hash>
-        <hash alg="SHA3-256">e788fee65c8fde553cde6596d31aa4bcfb7faa36d2da86c4285e8fc5f0c25442</hash>
-        <hash alg="SHA3-512">c811237a9383fadfdff19b35e396af252a1ff5fc8090e99b19b0878740dbf8bc9581b8982665f1be339f3b7795bbde55f27c5beb18aec0001d3b84477867c68f</hash>
+        <hash alg="MD5">46873ddce5bff8c741447678d6721e56</hash>
+        <hash alg="SHA-1">4e783168e32b4621dbd1ef0b7bfd14d7a6db124f</hash>
+        <hash alg="SHA-256">074838ac9b99024f743c1041b4cc31bb8158899b29756e1d2b0a940a8afb4940</hash>
+        <hash alg="SHA-512">33a108cebb60979c5b45627e412f6e76be51d88111005e7811f1af29b8e37ccefaa75ea256a4491d2089c44eb2ad28d6200420419824b16d05b74ab21ecd49c1</hash>
+        <hash alg="SHA-384">b07bf7c1323b8ead999f74355eaae304ac276bd60745b241b446c422f532908c3773e5c75271107bf842f30844240cdc</hash>
+        <hash alg="SHA3-384">191e41f0b1db14f8fdd4c036e64cfb862297652fc9958996b8a7b77873f7491585a7c6da80b6be84bf0737c7f8f85427</hash>
+        <hash alg="SHA3-256">fe10b55f48956d4f3e70b14660d6eafc643f747bae5966cc155717ccdb6c7406</hash>
+        <hash alg="SHA3-512">29a680bc20c1eed44e7370937c8d7a0ef05c21f2795b47f445617900261307d9cb94e8c86bcf8c3f54bce97af4940a486c16bd0bba2fa6af2468555b46051b5d</hash>
       </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=scaffold&amp;type=zip</purl>
+      <purl>pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=scaffold&amp;type=zip</purl>
       <externalReferences>
         <reference type="website">
           <url>https://ike.network/ike-tooling/ike-build-standards/</url>
@@ -263,31 +263,31 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=site-theme&amp;type=zip">
+    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=site-theme&amp;type=zip">
       <publisher>IKE Network</publisher>
       <group>network.ike.tooling</group>
       <name>ike-build-standards</name>
-      <version>151</version>
+      <version>152</version>
       <description>Versioned Claude instruction files for IKE projects.
         Modular standards (Maven, Java, IKE-specific) distributed
         as a classified Maven artifact.</description>
       <scope>required</scope>
       <hashes>
-        <hash alg="MD5">931502e54ea60c3abee999a3859d0dd3</hash>
-        <hash alg="SHA-1">5f90469db85e22f255100130e09618ea8c393a32</hash>
-        <hash alg="SHA-256">eed12de6945377a293436aa3692e5202113c4ec8b50b6d237b4ad8e905e593bb</hash>
-        <hash alg="SHA-512">6943071cf654cd2f6c80e59be749c432161d6479cd46ce5da01b52f60de81529b1b138b626074b0982ae6381bed2e3fdd6352ae31b3b604ae77d16dbf8148325</hash>
-        <hash alg="SHA-384">de22368df19e813921d379dcc06de21ae686b698235108b241f7cce6ad42bccb4a2baed1b09160c86de22f2e7fd75840</hash>
-        <hash alg="SHA3-384">1e76b7552e21103c5820ed295f30324c9cbf760995035601370258d1e901e45ea6bcd501c6a183823a54fcf7af8a5765</hash>
-        <hash alg="SHA3-256">6add2e65856b753c4865ad7383bf9bddf757a9a50923950d9ee71c188daac578</hash>
-        <hash alg="SHA3-512">134567d9e800af3d88cfb0ec57577684e43c2a5fa0b6279828d788f90f67df0075e6b843267c77c8a862b3cdc413864a202e43fffbed521985556f1712cbc94c</hash>
+        <hash alg="MD5">a49c96038dc75be4f7a72531c19a6902</hash>
+        <hash alg="SHA-1">9a11b501b724b94060227d2aef536e2af4d9eca3</hash>
+        <hash alg="SHA-256">8fbc38213dfc87f1d7299268dbc7e7e442341221bd60fdde320ddc975fc69ee2</hash>
+        <hash alg="SHA-512">e2f002c21d5039be7fbedc36a940a5c97c0efc001c5b0562b183aba33e3dcbe199b8c247c096b0264ad12c1be3cfc41b010aba3d04ebefffc2151b64c0f29214</hash>
+        <hash alg="SHA-384">11e01827a94e2453eb1c04a6b56aeda2a41e0e76e1b16fc80ea59297f8b9cb28506552af7872ecf603e4229f256fb089</hash>
+        <hash alg="SHA3-384">9580795cc233f173b08788494ab5d31b2284499ec4b7b2abe6073dd730143d3f25d7ece5eb10844a9ee540a9fcd10c55</hash>
+        <hash alg="SHA3-256">ec028624beb1e908778cd10590606317eb74f2cf70f049293bb8a79e4d2fdbc9</hash>
+        <hash alg="SHA3-512">4b391c824edb4d835b3b52dd4f845934d5bd6349664bda462fd0333ab5cad17be266ed7de19eb18d5f90d17db94ed6437d1c7fc975d15ef378583da3748498df</hash>
       </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=site-theme&amp;type=zip</purl>
+      <purl>pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=site-theme&amp;type=zip</purl>
       <externalReferences>
         <reference type="website">
           <url>https://ike.network/ike-tooling/ike-build-standards/</url>
@@ -297,31 +297,31 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=built-with&amp;type=zip">
+    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=built-with&amp;type=zip">
       <publisher>IKE Network</publisher>
       <group>network.ike.tooling</group>
       <name>ike-build-standards</name>
-      <version>151</version>
+      <version>152</version>
       <description>Versioned Claude instruction files for IKE projects.
         Modular standards (Maven, Java, IKE-specific) distributed
         as a classified Maven artifact.</description>
       <scope>required</scope>
       <hashes>
-        <hash alg="MD5">a2ed04277a66292b4f33a1c71d2ff947</hash>
-        <hash alg="SHA-1">9f905ca3e8ceacf055a210d1743823de93cf4bfb</hash>
-        <hash alg="SHA-256">421e50f6e85f975c847a5b7f43cd55c95724632dfd625f264885fb30681f1aa6</hash>
-        <hash alg="SHA-512">1a0d407b57849cf23c1f21c8207bad5e9b03c72c26fffe46c57c3690cb62fcd49999998268e40855669e46369938649955cee9fe506f5886b08b6d0bd872e8e1</hash>
-        <hash alg="SHA-384">bb415cd45f124fab45065ee3bdaffdb65236cd837e62934ecc7543479d556fc456b4d341eba308c6ba9bab9f9ec53302</hash>
-        <hash alg="SHA3-384">8cd67d3d247a9d60c0f14464ec6c596261072355e1c0a472c00d30c744551f562ef882d754e1324ae273ed6659d33b80</hash>
-        <hash alg="SHA3-256">4826ce998f53f9ce95f444655e0b582ad4742336d335a7d0cb4d3da95c00a1a5</hash>
-        <hash alg="SHA3-512">7f4cd04d7c5a5eff7e5ad259fd5605e943e3cc7314df8d81a44d19daf94c534474095fdf32c8d9db9b3abf535912c320e26bbd0ff430652917397f57ea19a353</hash>
+        <hash alg="MD5">f4ded9a9b029ad275cca4919d89667de</hash>
+        <hash alg="SHA-1">22cf634846b0635c8e2a3de56265c39d547f97cf</hash>
+        <hash alg="SHA-256">209cb96d74b500e8fb66dea1f3a3ed7b3228fe43ec064205ed7b5450bfd3372f</hash>
+        <hash alg="SHA-512">b86cfdb63fff3cab25c041e4f15ad4c20d850b31b125c65673bc77c8cf0f4c0d2c0cf7457995779266df8c6f770e1fa2e81fadebf1f459570d1fa1dc84c665e5</hash>
+        <hash alg="SHA-384">4e9542513521884ed1f908c986632f40c999f5e701b7a6af7dfb8dc9a9323f17bdb879fd9885917eba692182dc03d627</hash>
+        <hash alg="SHA3-384">51fcac4533f5b383d8e2350bff655bc3e6299087a1e2f1e9d7cebee4087c94358790722adb118eded322814151483288</hash>
+        <hash alg="SHA3-256">c350cde9ad943994d834c59db14caf30543e2019beaa4cb634cd2a1f9dd80c2c</hash>
+        <hash alg="SHA3-512">66c31c0153ccf2ad73937b09b946adb4fe1f4dcc03c1f869a644c7f8655003726d767a1eb23229c0af064d446919887e081c32219cec75ff83253446eb65b767</hash>
       </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=built-with&amp;type=zip</purl>
+      <purl>pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=built-with&amp;type=zip</purl>
       <externalReferences>
         <reference type="website">
           <url>https://ike.network/ike-tooling/ike-build-standards/</url>
@@ -331,31 +331,31 @@
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=asciidoctorconfig&amp;type=zip">
+    <component type="library" bom-ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=asciidoctorconfig&amp;type=zip">
       <publisher>IKE Network</publisher>
       <group>network.ike.tooling</group>
       <name>ike-build-standards</name>
-      <version>151</version>
+      <version>152</version>
       <description>Versioned Claude instruction files for IKE projects.
         Modular standards (Maven, Java, IKE-specific) distributed
         as a classified Maven artifact.</description>
       <scope>required</scope>
       <hashes>
-        <hash alg="MD5">8b3d81d37e8e93d3cd6bae510ee1ccdb</hash>
-        <hash alg="SHA-1">9b236a80c97db1c7c86d38468dcc68ee92ab1b96</hash>
-        <hash alg="SHA-256">c4824b7c678fda36ad38e808a5a4d2f842c8262899ecb0997b35465e7986200e</hash>
-        <hash alg="SHA-512">663ef8192d043279c85917a02f527a74a496493c9e13f7533f85a01d3543586bc302be58f3c675adda140ad8f88592ce68f037b16e1921f274bee7bcbecde0d8</hash>
-        <hash alg="SHA-384">03123055ae1152bf5ecf02e554313d49f1b2889a36315785f3b41a22759960866c589e656027c094b9660ad492f2c1c4</hash>
-        <hash alg="SHA3-384">b435f05c846a640cd8e823c770f25394c9b6642b5af4dda7623f3e25287420b4ee99c86939a0874f8686345dfab2b1e8</hash>
-        <hash alg="SHA3-256">d3a883b5091c526a7517252a281bbd082c0f04bfd38b3c533bc9cca014f74a38</hash>
-        <hash alg="SHA3-512">00e93c2387ed0fade309e66fa97fe0c7d3ef19010d5bb99a12fae7e47ed3c19f4d1d718626afb1b1076c273a00ce72404c89e4e6c68fe93f82229b7d148743c4</hash>
+        <hash alg="MD5">af22d8bb7f63d5fbe54e204027821840</hash>
+        <hash alg="SHA-1">506b1b71b8cc768bb7101b9e54a82a6eb0b89a64</hash>
+        <hash alg="SHA-256">6f56618470ef43efcec265bda025e493fc10c729ff54444436a5cd08a4ac5845</hash>
+        <hash alg="SHA-512">0eeb9fe53d69509deda2e86b684bccff6c1b4a1ebf5bfd2739f73a8c82bc1bf156df26bbefc097d8fbf39719ce901e133a94b9bdee9fad164f6d08b144961c9b</hash>
+        <hash alg="SHA-384">4434b5c757cc0efed27dfe3e4cc8956cff772dd5a32aaf613e8aeaa0d13ee7ff4829b781c386f48cc9d345456d272c7a</hash>
+        <hash alg="SHA3-384">ff6fb81cd3a40c14a0341214bd7ba3fcbcc020a96d6f484bc9780435c0c182151de5dd14f53872d83ec8d3515391e256</hash>
+        <hash alg="SHA3-256">9153296b9c1762e497f6faf955b37cf9539f1495d6ac53fb173a9ca44ac4ca27</hash>
+        <hash alg="SHA3-512">f56d86074630ed3074c777baa72601987ebb65efacf7fe274bdff4507390660e230eef7d1fbd09c828f02a45e43f28d3a44a3cceebcfce9d6d292f9cc1154e46</hash>
       </hashes>
       <licenses>
         <license>
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=asciidoctorconfig&amp;type=zip</purl>
+      <purl>pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=asciidoctorconfig&amp;type=zip</purl>
       <externalReferences>
         <reference type="website">
           <url>https://ike.network/ike-tooling/ike-build-standards/</url>
@@ -367,25 +367,25 @@
     </component>
   </components>
   <dependencies>
-    <dependency ref="pkg:maven/network.ike.examples/example-project@11?type=jar">
-      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=claude&amp;type=zip"/>
-      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=config&amp;type=zip"/>
-      <dependency ref="pkg:maven/network.ike.docs/ike-doc-resources@13?type=jar"/>
-      <dependency ref="pkg:maven/network.ike.docs/docbook-xsl@13?type=jar"/>
-      <dependency ref="pkg:maven/network.ike.docs/minimal-fonts@13?type=zip"/>
-      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=scaffold&amp;type=zip"/>
-      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=site-theme&amp;type=zip"/>
-      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=built-with&amp;type=zip"/>
-      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=asciidoctorconfig&amp;type=zip"/>
+    <dependency ref="pkg:maven/network.ike.examples/example-project@12?type=jar">
+      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=claude&amp;type=zip"/>
+      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=config&amp;type=zip"/>
+      <dependency ref="pkg:maven/network.ike.docs/ike-doc-resources@14?type=jar"/>
+      <dependency ref="pkg:maven/network.ike.docs/docbook-xsl@14?type=jar"/>
+      <dependency ref="pkg:maven/network.ike.docs/minimal-fonts@14?type=zip"/>
+      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=scaffold&amp;type=zip"/>
+      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=site-theme&amp;type=zip"/>
+      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=built-with&amp;type=zip"/>
+      <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=asciidoctorconfig&amp;type=zip"/>
     </dependency>
-    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=claude&amp;type=zip"/>
-    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=config&amp;type=zip"/>
-    <dependency ref="pkg:maven/network.ike.docs/ike-doc-resources@13?type=jar"/>
-    <dependency ref="pkg:maven/network.ike.docs/docbook-xsl@13?type=jar"/>
-    <dependency ref="pkg:maven/network.ike.docs/minimal-fonts@13?type=zip"/>
-    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=scaffold&amp;type=zip"/>
-    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=site-theme&amp;type=zip"/>
-    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=built-with&amp;type=zip"/>
-    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@151?classifier=asciidoctorconfig&amp;type=zip"/>
+    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=claude&amp;type=zip"/>
+    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=config&amp;type=zip"/>
+    <dependency ref="pkg:maven/network.ike.docs/ike-doc-resources@14?type=jar"/>
+    <dependency ref="pkg:maven/network.ike.docs/docbook-xsl@14?type=jar"/>
+    <dependency ref="pkg:maven/network.ike.docs/minimal-fonts@14?type=zip"/>
+    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=scaffold&amp;type=zip"/>
+    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=site-theme&amp;type=zip"/>
+    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=built-with&amp;type=zip"/>
+    <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@152?classifier=asciidoctorconfig&amp;type=zip"/>
   </dependencies>
 </bom>
