@@ -1,7 +1,7 @@
 {
   "bomFormat" : "CycloneDX",
   "specVersion" : "1.6",
-  "serialNumber" : "urn:uuid:b667170b-7978-3a22-bff7-b7685e63dfcd",
+  "serialNumber" : "urn:uuid:3eabb7ac-d9df-3b26-b323-e32dea3c3380",
   "version" : 1,
   "metadata" : {
     "lifecycles" : [
@@ -57,11 +57,11 @@
     },
     "component" : {
       "type" : "library",
-      "bom-ref" : "pkg:maven/network.ike.examples/example-project@8?type=jar",
+      "bom-ref" : "pkg:maven/network.ike.examples/example-project@9?type=jar",
       "publisher" : "IKE Network",
       "group" : "network.ike.examples",
       "name" : "example-project",
-      "version" : "8",
+      "version" : "9",
       "description" : "Example Java project demonstrating IKE documentation pipeline integration with Java source, tests, and Koncept macros.",
       "licenses" : [
         {
@@ -70,7 +70,7 @@
           }
         }
       ],
-      "purl" : "pkg:maven/network.ike.examples/example-project@8?type=jar",
+      "purl" : "pkg:maven/network.ike.examples/example-project@9?type=jar",
       "externalReferences" : [
         {
           "type" : "website",
@@ -605,7 +605,7 @@
   ],
   "dependencies" : [
     {
-      "ref" : "pkg:maven/network.ike.examples/example-project@8?type=jar",
+      "ref" : "pkg:maven/network.ike.examples/example-project@9?type=jar",
       "dependsOn" : [
         "pkg:maven/network.ike.tooling/ike-build-standards@150?classifier=claude&type=zip",
         "pkg:maven/network.ike.tooling/ike-build-standards@150?classifier=config&type=zip",
