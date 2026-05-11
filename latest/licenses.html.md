@@ -1,12 +1,12 @@
 ---
-date_published: 2026-05-09
-date_modified: 2026-05-09
+date_published: 2026-05-10
+date_modified: 2026-05-10
 canonical_url: https://github.com/IKE-Network/example-project/licenses.html
 ---
 
 # Licenses (SPDX)
 
-Licenses for declared dependencies of `example-project` 12, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
+Licenses for declared dependencies of `example-project` 13, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
 
 ## [#summary](#summary)Summary
 
@@ -23,19 +23,19 @@ Reference: [Apache-2.0 on spdx.org](https://spdx.org/licenses/Apache-2.0.html)[2
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `ike-doc-resources` | `14` |
-| `network.ike.tooling` | `ike-build-standards` | `152` |
-| `network.ike.tooling` | `ike-build-standards` | `152` |
-| `network.ike.tooling` | `ike-build-standards` | `152` |
-| `network.ike.tooling` | `ike-build-standards` | `152` |
-| `network.ike.tooling` | `ike-build-standards` | `152` |
-| `network.ike.tooling` | `ike-build-standards` | `152` |
+| `network.ike.docs` | `ike-doc-resources` | `15` |
+| `network.ike.tooling` | `ike-build-standards` | `153` |
+| `network.ike.tooling` | `ike-build-standards` | `153` |
+| `network.ike.tooling` | `ike-build-standards` | `153` |
+| `network.ike.tooling` | `ike-build-standards` | `153` |
+| `network.ike.tooling` | `ike-build-standards` | `153` |
+| `network.ike.tooling` | `ike-build-standards` | `153` |
 
 ## [#apache-2-0-or-mit-license-docbook-xsl-stylesheets](#apache-2-0-or-mit-license-docbook-xsl-stylesheets)Apache-2.0 OR MIT License (DocBook XSL Stylesheets)
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `docbook-xsl` | `14` |
+| `network.ike.docs` | `docbook-xsl` | `15` |
 
 ## [#ofl-1-1](#ofl-1-1)OFL-1.1
 
@@ -43,7 +43,7 @@ Reference: [OFL-1.1 on spdx.org](https://spdx.org/licenses/OFL-1.1.html)[3]
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `minimal-fonts` | `14` |
+| `network.ike.docs` | `minimal-fonts` | `15` |
 
 ## [#see-also](#see-also)See also
 
