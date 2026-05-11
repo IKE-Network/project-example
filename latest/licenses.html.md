@@ -6,7 +6,7 @@ canonical_url: https://github.com/IKE-Network/example-project/licenses.html
 
 # Licenses (SPDX)
 
-Licenses for declared dependencies of `example-project` 15, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
+Licenses for declared dependencies of `example-project` 16, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
 
 ## [#summary](#summary)Summary
 
@@ -23,19 +23,19 @@ Reference: [Apache-2.0 on spdx.org](https://spdx.org/licenses/Apache-2.0.html)[2
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `ike-doc-resources` | `17` |
-| `network.ike.tooling` | `ike-build-standards` | `155` |
-| `network.ike.tooling` | `ike-build-standards` | `155` |
-| `network.ike.tooling` | `ike-build-standards` | `155` |
-| `network.ike.tooling` | `ike-build-standards` | `155` |
-| `network.ike.tooling` | `ike-build-standards` | `155` |
-| `network.ike.tooling` | `ike-build-standards` | `155` |
+| `network.ike.docs` | `ike-doc-resources` | `18` |
+| `network.ike.tooling` | `ike-build-standards` | `156` |
+| `network.ike.tooling` | `ike-build-standards` | `156` |
+| `network.ike.tooling` | `ike-build-standards` | `156` |
+| `network.ike.tooling` | `ike-build-standards` | `156` |
+| `network.ike.tooling` | `ike-build-standards` | `156` |
+| `network.ike.tooling` | `ike-build-standards` | `156` |
 
 ## [#apache-2-0-or-mit-license-docbook-xsl-stylesheets](#apache-2-0-or-mit-license-docbook-xsl-stylesheets)Apache-2.0 OR MIT License (DocBook XSL Stylesheets)
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `docbook-xsl` | `17` |
+| `network.ike.docs` | `docbook-xsl` | `18` |
 
 ## [#ofl-1-1](#ofl-1-1)OFL-1.1
 
@@ -43,7 +43,7 @@ Reference: [OFL-1.1 on spdx.org](https://spdx.org/licenses/OFL-1.1.html)[3]
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `minimal-fonts` | `17` |
+| `network.ike.docs` | `minimal-fonts` | `18` |
 
 ## [#see-also](#see-also)See also
 
