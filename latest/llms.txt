@@ -6,10 +6,10 @@
 ## Documentation
 
 - [example-project](https://github.com/IKE-Network/example-project/index.html.md)
+- [Dependencies (SBOM)](https://github.com/IKE-Network/example-project/dependencies.html.md)
 
 ## Other
 
-- [Dependencies (SBOM)](https://github.com/IKE-Network/example-project/dependencies.html.md)
 - [Licenses (SPDX)](https://github.com/IKE-Network/example-project/licenses.html.md)
 - [Built With](https://github.com/IKE-Network/example-project/built-with.html.md)
 
