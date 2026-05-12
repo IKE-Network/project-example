@@ -6,7 +6,7 @@ canonical_url: https://github.com/IKE-Network/example-project/licenses.html
 
 # Licenses (SPDX)
 
-Licenses for declared dependencies of `example-project` 18, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
+Licenses for declared dependencies of `example-project` 19, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
 
 ## [#summary](#summary)Summary
 
@@ -23,7 +23,7 @@ Reference: [Apache-2.0 on spdx.org](https://spdx.org/licenses/Apache-2.0.html)[2
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `ike-doc-resources` | `20` |
+| `network.ike.docs` | `ike-doc-resources` | `21` |
 | `network.ike.tooling` | `ike-build-standards` | `158` |
 | `network.ike.tooling` | `ike-build-standards` | `158` |
 | `network.ike.tooling` | `ike-build-standards` | `158` |
@@ -35,7 +35,7 @@ Reference: [Apache-2.0 on spdx.org](https://spdx.org/licenses/Apache-2.0.html)[2
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `docbook-xsl` | `20` |
+| `network.ike.docs` | `docbook-xsl` | `21` |
 
 ## [#ofl-1-1](#ofl-1-1)OFL-1.1
 
@@ -43,7 +43,7 @@ Reference: [OFL-1.1 on spdx.org](https://spdx.org/licenses/OFL-1.1.html)[3]
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `minimal-fonts` | `20` |
+| `network.ike.docs` | `minimal-fonts` | `21` |
 
 ## [#see-also](#see-also)See also
 
