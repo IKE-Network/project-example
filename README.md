@@ -185,14 +185,15 @@ touch src/test/java/org/ike/example/RelationshipTest.java
 
 ### Add Documentation Dependencies
 
-To include documentation from other projects:
+To include documentation from other projects (using the canonical
+`adoc` classifier per [`#321`](https://github.com/IKE-Network/ike-issues/issues/321)):
 
 ```xml
 <dependency>
     <groupId>com.example</groupId>
     <artifactId>core-docs</artifactId>
     <version>1.0.0</version>
-    <classifier>asciidoc</classifier>
+    <classifier>adoc</classifier>
     <type>zip</type>
 </dependency>
 ```
@@ -225,13 +226,14 @@ The project is designed for CI/CD pipelines:
 ```yaml
 # Example GitHub Actions
 steps:
-  - uses: actions/setup-java@v3
+  - uses: actions/setup-java@v4
     with:
       java-version: '25'
+      distribution: 'temurin'
   - name: Build
     run: ./mvnw clean verify -Dike.pdf.prawn
   - name: Archive Documentation
-    uses: actions/upload-artifact@v3
+    uses: actions/upload-artifact@v4
     with:
       name: documentation
       path: target/generated-docs/
@@ -239,7 +241,7 @@ steps:
 
 ## Links
 
-- **Documentation:** [`https://ike.network/example-project/`](https://ike.network/example-project/) (after `mvn site:site`, local copy at `target/site/`)
+- **Documentation:** [`https://ike.network/example-project/`](https://ike.network/example-project/) (the live published Maven Site; a local copy lands at `target/site/` after `mvn site:site`)
 - **Workspace:** [`IKE-Network/ike-example-ws`](https://ike.network/ike-example-ws/) — clone the workspace to build example-project alongside doc-example and the integration tests
 - **Foundation sites:**
   [`ike-platform`](https://ike.network/ike-platform/) (parent POM, BOM, workspace plugin) ·
