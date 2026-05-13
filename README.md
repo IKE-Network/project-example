@@ -11,7 +11,10 @@ Demonstration project showcasing the IKE Network Maven AsciiDoc pipeline with Ja
 - **Java 25** with modern records and language features
 - **Comprehensive Testing** using JUnit 5, AssertJ, and Mockito
 - **Professional Documentation** with AsciiDoc (HTML + PDF output)
-- **Diagram Support** including Mermaid, PlantUML, and GraphViz
+- **Diagram Support** for PlantUML (preferred) and GraphViz —
+  rendered server-side via Kroki, no local CLI required. See
+  [`IKE-DIAGRAMS.md`](https://ike.network/ike-tooling/ike-build-standards/IKE-DIAGRAMS.html)
+  for tool-selection guidance.
 - **Maven 4.1.0** with latest build conventions
 - **IDE Integration** with IntelliJ IDEA pre-configured
 
@@ -21,9 +24,9 @@ Demonstration project showcasing the IKE Network Maven AsciiDoc pipeline with Ja
 
 - **JDK 25** (or compatible)
 - **Maven 4.0.0+** (wrapper included)
-- **Diagram Tools** (optional, for diagram rendering):
-  - GraphViz: `brew install graphviz` (macOS) or `apt install graphviz` (Linux)
-  - Mermaid CLI: `npm install -g @mermaid-js/mermaid-cli`
+- **No local diagram tools required** — PlantUML and GraphViz
+  render server-side via Kroki (the build is configured to use
+  `https://kroki.komet.sh`).
 
 ### Build and Test
 
@@ -120,7 +123,8 @@ void shouldCreateValidConcept() {
 
 Documentation is written in AsciiDoc and includes:
 
-- **Architecture diagrams** (Mermaid, PlantUML, GraphViz)
+- **Architecture diagrams** (PlantUML preferred, GraphViz where
+  layout precision matters — see [`IKE-DIAGRAMS.md`](https://ike.network/ike-tooling/ike-build-standards/IKE-DIAGRAMS.html))
 - **Code examples** with syntax highlighting
 - **Modular chapters** for maintainability
 - **Professional PDF theme** for distribution
@@ -138,26 +142,46 @@ include::chapters/my-chapter.adoc[]
 
 ### Including Diagrams
 
-**Mermaid:**
+The IKE diagram standard prefers **PlantUML** for most cases
+and **GraphViz** when layout precision matters. Diagrams are
+rendered server-side via Kroki; no local CLI tools are needed.
+Mermaid is intentionally not part of the recommended toolset
+(see [`IKE-DIAGRAMS.md`](https://ike.network/ike-tooling/ike-build-standards/IKE-DIAGRAMS.html)).
+
+**PlantUML** (preferred):
 ```asciidoc
-[mermaid]
-....
-graph LR
-    A[Start] --> B[Process]
-    B --> C[End]
-....
+.Pipeline architecture
+[plantuml]
+----
+@startuml
+left to right direction
+rectangle "FHIR Source" as A
+rectangle "Evrete Engine" as B
+rectangle "ANF Statements" as C
+A --> B
+B --> C
+@enduml
+----
 ```
 
-**PlantUML:**
+**GraphViz** (for graphs where layout precision matters):
 ```asciidoc
-[plantuml]
-....
-@startuml
-Alice -> Bob: Hello
-Bob --> Alice: Hi!
-@enduml
-....
+.Dependency graph
+[graphviz]
+----
+digraph G {
+  rankdir=LR
+  A -> B
+  B -> C
+  A -> C
+}
+----
 ```
+
+Every diagram should have a block title (renders as a figure
+caption and serves as alt text). See [`IKE-DIAGRAMS.md`](https://ike.network/ike-tooling/ike-build-standards/IKE-DIAGRAMS.html)
+for the full diagram-test (when to add a diagram), tool-selection
+decision tree, and authoring conventions.
 
 ## IntelliJ IDEA Setup
 
