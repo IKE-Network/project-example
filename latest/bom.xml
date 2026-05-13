@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom serialNumber="urn:uuid:7a667c6c-ad73-352c-8113-96ad5d4eb3b9" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+<bom serialNumber="urn:uuid:b9ff6b6b-c1c1-3515-a2c2-4aa3d9aa3534" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
   <metadata>
     <lifecycles>
       <lifecycle>
@@ -27,11 +27,11 @@
         </component>
       </components>
     </tools>
-    <component type="library" bom-ref="pkg:maven/network.ike.examples/example-project@22?type=jar">
+    <component type="library" bom-ref="pkg:maven/network.ike.examples/example-project@23?type=jar">
       <publisher>IKE Network</publisher>
       <group>network.ike.examples</group>
       <name>example-project</name>
-      <version>22</version>
+      <version>23</version>
       <description>Example Java project demonstrating IKE documentation pipeline
         integration with Java source, tests, and Koncept macros.</description>
       <licenses>
@@ -39,7 +39,7 @@
           <id>Apache-2.0</id>
         </license>
       </licenses>
-      <purl>pkg:maven/network.ike.examples/example-project@22?type=jar</purl>
+      <purl>pkg:maven/network.ike.examples/example-project@23?type=jar</purl>
       <externalReferences>
         <reference type="website">
           <url>https://github.com/IKE-Network/example-project</url>
@@ -367,7 +367,7 @@
     </component>
   </components>
   <dependencies>
-    <dependency ref="pkg:maven/network.ike.examples/example-project@22?type=jar">
+    <dependency ref="pkg:maven/network.ike.examples/example-project@23?type=jar">
       <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@167?classifier=claude&amp;type=zip"/>
       <dependency ref="pkg:maven/network.ike.tooling/ike-build-standards@167?classifier=config&amp;type=zip"/>
       <dependency ref="pkg:maven/network.ike.docs/ike-doc-resources@25?type=jar"/>

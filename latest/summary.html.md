@@ -27,6 +27,6 @@ canonical_url: https://github.com/IKE-Network/example-project/summary.html
 | --- | --- |
 | GroupId | network.ike.examples |
 | ArtifactId | example-project |
-| Version | 22 |
+| Version | 23 |
 | Type | jar |
 | Java Version | 25 |
