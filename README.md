@@ -271,6 +271,7 @@ steps:
   [`ike-platform`](https://ike.network/ike-platform/) (parent POM, BOM, workspace plugin) ·
   [`ike-docs`](https://ike.network/ike-docs/) (documentation plumbing) ·
   [`ike-tooling`](https://ike.network/ike-tooling/) (build tooling)
+- **Build standards:** [`ike-build-standards`](https://ike.network/ike-tooling/ike-build-standards/)
 - **Issues:** [`IKE-Network/ike-issues`](https://github.com/IKE-Network/ike-issues) (cross-project tracker)
 - **Source:** [`IKE-Network/example-project`](https://github.com/IKE-Network/example-project)
 
@@ -278,6 +279,30 @@ steps:
 
 - [AsciiDoctor User Manual](https://docs.asciidoctor.org/)
 - [SNOMED International](https://www.snomed.org/)
+
+## Doc as Code + LLM-Friendly
+
+This project follows the IKE Network's doc-as-code philosophy:
+build conventions, documentation standards, and AI-assistant
+guidance live as versioned Markdown files in
+[`ike-build-standards`](https://github.com/IKE-Network/ike-tooling/tree/main/ike-build-standards#readme)
+and are unpacked into every consumer's `.claude/standards/` at
+the `validate` phase. When a developer — or Claude itself —
+opens this project, the agent reads those standards and applies
+them automatically; contributors don't have to memorize the
+conventions.
+
+The standards most directly relevant to a hybrid (Java + docs)
+project are
+[`IKE-JAVA.md`](https://github.com/IKE-Network/ike-tooling/blob/main/ike-build-standards/src/main/standards/IKE-JAVA.md)
+(IKE-specific Java conventions),
+[`IKE-DOC.md`](https://github.com/IKE-Network/ike-tooling/blob/main/ike-build-standards/src/main/standards/IKE-DOC.md)
+(module shapes; classifier-canonical attachment),
+[`IKE-DIAGRAMS.md`](https://github.com/IKE-Network/ike-tooling/blob/main/ike-build-standards/src/main/standards/IKE-DIAGRAMS.md)
+(PlantUML / GraphViz authoring), and
+[`TESTING.md`](https://github.com/IKE-Network/ike-tooling/blob/main/ike-build-standards/src/main/standards/TESTING.md)
+(JUnit 5, AssertJ, Mockito conventions). See the
+[full inventory](https://github.com/IKE-Network/ike-tooling/tree/main/ike-build-standards#readme).
 
 ## License
 
