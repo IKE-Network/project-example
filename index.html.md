@@ -107,13 +107,17 @@ When creating a new IKE library, copy the following from this template:
 | `src/docs/asciidoc/` | AsciiDoc documentation source. Edit `index.adoc` and add `chapters/` includes as needed. |
 | `src/site/` | Maven Site Plugin source. Update `site.xml` (project name, repo URL, breadcrumb path) and `asciidoc/index.adoc` for your project. Keep the Forest-theme `site.css` and `ike-logo.svg` for visual consistency with the rest of the IKE ecosystem. |
 
+## [#not-published-to-maven-central](#not-published-to-maven-central)Not published to Maven Central
+
+`example-project` is a reference template, not a library. Its releases are tagged on GitHub and deployed to the IKE Nexus, but it is deliberately **not** published to Maven Central — nothing should ever declare a dependency on it. You consume this project by reading it and copying its structure into a project of your own. The IKE foundation (`ike-base-parent`, `ike-tooling`, `ike-docs`, `ike-platform`) is the part published to Central and meant to be inherited; see [the IKE Network landing page](https://ike.network/)[4] for the foundation/examples split.
+
 ## [#resources](#resources)Resources
 
 | Resource | URL |
 | --- | --- |
-| Source repository | [https://github.com/IKE-Network/example-project](https://github.com/IKE-Network/example-project)[4] |
-| Cross-project issue tracker | [https://github.com/IKE-Network/ike-issues](https://github.com/IKE-Network/ike-issues)[5] |
-| IKE Network landing page | [https://ike.network/](https://ike.network/)[6] |
+| Source repository | [https://github.com/IKE-Network/example-project](https://github.com/IKE-Network/example-project)[5] |
+| Cross-project issue tracker | [https://github.com/IKE-Network/ike-issues](https://github.com/IKE-Network/ike-issues)[6] |
+| IKE Network landing page | [https://ike.network/](https://ike.network/)[4] |
 | IKE Platform (parent POM, BOM, workspace plugin) | [https://ike.network/ike-platform/](https://ike.network/ike-platform/)[7] |
 | Sibling: doc-only template | [https://ike.network/doc-example/](https://ike.network/doc-example/)[1] |
 | Sibling: workspace-aggregator template | [https://ike.network/ike-example-ws/](https://ike.network/ike-example-ws/)[2] |
