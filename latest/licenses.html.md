@@ -1,12 +1,12 @@
 ---
 date_published: 2026-05-19
 date_modified: 2026-05-19
-canonical_url: https://github.com/IKE-Network/example-project/licenses.html
+canonical_url: https://github.com/IKE-Network/project-example/licenses.html
 ---
 
 # Licenses (SPDX)
 
-Licenses for declared dependencies of `example-project` 31, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
+Licenses for declared dependencies of `project-example` 32-SNAPSHOT, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
 
 ## [#summary](#summary)Summary
 

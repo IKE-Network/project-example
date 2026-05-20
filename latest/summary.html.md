@@ -1,7 +1,7 @@
 ---
 date_published: 2026-05-19
 date_modified: 2026-05-19
-canonical_url: https://github.com/IKE-Network/example-project/summary.html
+canonical_url: https://github.com/IKE-Network/project-example/summary.html
 ---
 
 # Project Summary
@@ -10,9 +10,9 @@ canonical_url: https://github.com/IKE-Network/example-project/summary.html
 
 | Field | Value |
 | --- | --- |
-| Name | IKE Example Project |
+| Name | IKE Project Example |
 | Description | Example Java project demonstrating IKE documentation pipeline integration with Java source, tests, and Koncept macros. |
-| Homepage | [https://github.com/IKE-Network/example-project](https://github.com/IKE-Network/example-project)[1] |
+| Homepage | [https://github.com/IKE-Network/project-example](https://github.com/IKE-Network/project-example)[1] |
 
 ## [Project Organization](#project-organization)
 
@@ -26,7 +26,7 @@ canonical_url: https://github.com/IKE-Network/example-project/summary.html
 | Field | Value |
 | --- | --- |
 | GroupId | network.ike.examples |
-| ArtifactId | example-project |
-| Version | 31 |
+| ArtifactId | project-example |
+| Version | 32-SNAPSHOT |
 | Type | jar |
 | Java Version | 25 |
