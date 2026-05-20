@@ -1,6 +1,11 @@
-# example-project
+# project-example
 
 Standalone Java + docs project demonstrating a single-command build that compiles sources, runs tests, and renders AsciiDoc.
+
+Formerly named `example-project`; renamed under the canonical
+naming policy (IKE-Network/ike-issues#467) so the artifact ID,
+git repo name, on-disk directory, and workspace.yaml subproject
+key all match.
 
 ## Build Standards
 
@@ -27,4 +32,4 @@ mvn clean verify -DskipTests -T4
 - **Never embed shell commands inline in POM** — extract to a named script
 
 See `.claude/standards/` (after `mvn validate`) for full standards.
-See `CLAUDE-example-project.md` for project-specific notes.
+See `CLAUDE-project-example.md` for project-specific notes.

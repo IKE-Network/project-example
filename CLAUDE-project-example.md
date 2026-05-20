@@ -1,10 +1,10 @@
-# example-project — Project Notes
+# project-example — Project Notes
 
 <!-- Migrated from CLAUDE.md by ws:init.
      This file is for hand-authored, project-specific information.
      Commit this file to git. -->
 
-# Example Project — Claude Standards
+# Project Example — Claude Standards
 
 ## Initial Setup — ALWAYS DO THIS FIRST
 
@@ -37,7 +37,7 @@ Standalone reference implementation demonstrating a Java project
 that ships both compiled code and documentation through a single
 `mvn verify` cycle.
 
-- **Artifact**: `network.ike.examples:example-project`
+- **Artifact**: `network.ike.examples:project-example`
 - **Packaging**: `jar` (Java sources) plus the documentation pipeline
   contributed by `ike-parent`'s `doc-pipeline` profile (file-activated
   by `src/docs/asciidoc`)
@@ -47,7 +47,7 @@ that ships both compiled code and documentation through a single
 ### Release Cascade Position
 
 ```
-ike-tooling → ike-docs → ike-platform → [doc-example, example-project] → ike-example-ws
+ike-tooling → ike-docs → ike-platform → [doc-example, project-example, integration-tests-example] → workspace-example
 ```
 
 ## Key Build Commands
@@ -68,6 +68,6 @@ mvn clean verify -Dike.pdf.prawn -Dike.pdf.fop
 
 ## Output Locations
 
-- Jar: `target/example-project-1-SNAPSHOT.jar`
+- Jar: `target/project-example-1-SNAPSHOT.jar`
 - HTML: `target/generated-docs/html/index.html`
-- PDF: `target/generated-docs/pdf-{renderer}/example-project.pdf`
+- PDF: `target/generated-docs/pdf-{renderer}/project-example.pdf`

@@ -1,8 +1,15 @@
-# IKE Example Project
+# IKE Project Example
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Documentation](https://img.shields.io/badge/docs-ike.network%2Fexample--project-blue)](https://ike.network/example-project/)
+[![Documentation](https://img.shields.io/badge/docs-ike.network%2Fproject--example-blue)](https://ike.network/project-example/)
 [![IKE Network](https://img.shields.io/badge/IKE-Network-green)](https://ike.network/)
+
+> **Note (2026-05-20):** This project was previously named
+> `example-project`. It was renamed to `project-example` under the
+> canonical naming policy in IKE-Network/ike-issues#467, which
+> establishes that artifact ID, git repo name, on-disk directory,
+> and workspace.yaml subproject key must all match. GitHub
+> redirects keep old clone URLs working.
 
 Demonstration project showcasing the IKE Network Maven AsciiDoc pipeline with Java 25 development.
 
@@ -54,7 +61,7 @@ After building:
 ## Project Structure
 
 ```
-example-project/
+project-example/
 ├── src/
 │   ├── main/
 │   │   └── java/
@@ -232,7 +239,7 @@ include::{generated}/com.example/core-docs/chapters/terminology.adoc[]
 
 ```
 network.ike.platform:ike-parent (AsciiDoc pipeline + Java configuration)
-└── network.ike.examples:example-project (this project)
+└── network.ike.examples:project-example (this project)
 ```
 
 `ike-parent` supplies both the documentation pipeline and the Java
@@ -265,15 +272,15 @@ steps:
 
 ## Links
 
-- **Documentation:** [`https://ike.network/example-project/`](https://ike.network/example-project/) (the live published Maven Site; a local copy lands at `target/site/` after `mvn site:site`)
-- **Workspace:** [`IKE-Network/ike-example-ws`](https://ike.network/ike-example-ws/) — clone the workspace to build example-project alongside doc-example and the integration tests
+- **Documentation:** [`https://ike.network/project-example/`](https://ike.network/project-example/) (the live published Maven Site; a local copy lands at `target/site/` after `mvn site:site`)
+- **Workspace:** [`IKE-Network/workspace-example`](https://ike.network/workspace-example/) — clone the workspace to build project-example alongside doc-example and integration-tests-example
 - **Foundation sites:**
   [`ike-platform`](https://ike.network/ike-platform/) (parent POM, BOM, workspace plugin) ·
   [`ike-docs`](https://ike.network/ike-docs/) (documentation plumbing) ·
   [`ike-tooling`](https://ike.network/ike-tooling/) (build tooling)
 - **Build standards:** [`ike-build-standards`](https://ike.network/ike-tooling/ike-build-standards/)
 - **Issues:** [`IKE-Network/ike-issues`](https://github.com/IKE-Network/ike-issues) (cross-project tracker)
-- **Source:** [`IKE-Network/example-project`](https://github.com/IKE-Network/example-project)
+- **Source:** [`IKE-Network/project-example`](https://github.com/IKE-Network/project-example)
 
 ## External Resources
 
