@@ -59,6 +59,15 @@
         <url>https://ike.network</url>
     </organization>
 
+    <properties>
+        <!-- This is a worked example, not a library. Override the
+             Tier 0 default so ike:release-publish ships internally
+             only (tag + Nexus + GitHub Release + gh-pages site)
+             without publishing to Maven Central. Documented in
+             ike-network-site index.adoc § Examples. -->
+        <ike.publishToCentral>false</ike.publishToCentral>
+    </properties>
+
     <distributionManagement>
         <site>
             <id>ike-site</id>
