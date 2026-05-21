@@ -1,6 +1,6 @@
 ---
-date_published: 2026-05-19
-date_modified: 2026-05-19
+date_published: 2026-05-20
+date_modified: 2026-05-20
 canonical_url: https://github.com/IKE-Network/project-example/summary.html
 ---
 
@@ -27,6 +27,6 @@ canonical_url: https://github.com/IKE-Network/project-example/summary.html
 | --- | --- |
 | GroupId | network.ike.examples |
 | ArtifactId | project-example |
-| Version | 32-SNAPSHOT |
+| Version | 32 |
 | Type | jar |
 | Java Version | 25 |
