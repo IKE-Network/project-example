@@ -43,16 +43,16 @@ shapes of IKE consumer:
 
 For the workspace-aggregator template (one repo orchestrating
 multiple consumers via `ws:*` goals), see
-link:https://ike.network/ike-example-ws/[ike-example-ws].
+link:https://ike.network/workspace-example/[workspace-example].
 
 == Release Cascade Position
 
 [source]
 ----
-ike-tooling -> ike-docs -> ike-platform -> [example-project, doc-example] -> ike-example-ws
+ike-tooling -> ike-docs -> ike-platform -> { doc-example, project-example, integration-tests-example } -> workspace-example
 ----
 
-`example-project` releases after `ike-platform` (whose `ike-parent`
+`project-example` releases after `ike-platform` (whose `ike-parent`
 this project consumes) and after `ike-docs` (whose
 `ike-doc-maven-plugin` is declared as a regular managed plugin in
 `ike-parent` via `${ike-docs.version}`; the documentation pipeline
@@ -210,5 +210,8 @@ for the foundation/examples split.
 | https://ike.network/doc-example/
 
 | Sibling: workspace-aggregator template
-| https://ike.network/ike-example-ws/
+| https://ike.network/workspace-example/
+
+| Sibling: integration-test harness
+| https://ike.network/integration-tests-example/
 |===
