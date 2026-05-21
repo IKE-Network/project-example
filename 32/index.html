@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>example-project &ndash; project-example</title>
+	<title>project-example &ndash; project-example</title>
 
 	<meta name="keywords" content="IKE,example,reference,Java,AsciiDoc,ike-parent,IKE Network" />
 	<meta name="generator" content="Maven Site Plugin, Doxia Site Renderer 2.0.0, Skin sentry-maven-skin 7.0.00, from asciidoc" />
@@ -22,7 +22,7 @@
 {
 	"@context": "https://schema.org",
 	"@type": "TechArticle",
-	"headline": "example-project",
+	"headline": "project-example",
 	"datePublished": "2026-05-21T00:00:00",
 	"dateModified": "2026-05-21T00:00:00",
 	"mainEntityOfPage": "https://github.com/IKE-Network/project-example/index.html",
@@ -182,7 +182,7 @@
 									<h1 title="Documentation Home"><i class="fas fa-home"></i></h1>
 									<ul class="list-group">
 										<li class="list-group-item"><i class="fas fa-folder-open"></i>Documentation</li>
-												<a class="list-group-item" href="#example-project" du-smooth-scroll>
+												<a class="list-group-item" href="#project-example" du-smooth-scroll>
 													<i class="fas fa-home"></i>Overview
 													<i class="fas fa-angle-double-down pull-right"></i>
 												</a>
@@ -211,7 +211,7 @@
 <span class="badge">2</span>												</a>
 									</ul>
 								</div>
-<h1 id="example-project">example-project</h1>
+<h1 id="project-example">project-example</h1>
 <p>A standalone reference project demonstrating an IKE consumer that ships <strong>both compiled Java code and rendered AsciiDoc documentation</strong> through a single <code>mvn verify</code> cycle. Inherits <code>ike-parent</code> from <code>ike-platform</code> and exercises the doc pipeline contributed by <code>ike-docs</code>.</p>
 <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
  <thead>
@@ -227,7 +227,7 @@
   </tr>
   <tr class="a">
    <td style="text-align: left;">Artifact</td>
-   <td><code>example-project</code></td>
+   <td><code>project-example</code></td>
   </tr>
   <tr class="b">
    <td style="text-align: left;">Packaging</td>
@@ -255,7 +255,7 @@
   </thead>
   <tbody>
    <tr class="b">
-    <td style="text-align: left;"><code>example-project</code></td>
+    <td style="text-align: left;"><code>project-example</code></td>
     <td>You’re shipping a JAR (a library, a CLI, a service) AND want rendered docs alongside it. Builds run a Java compile + test cycle plus the AsciiDoc → HTML/PDF pipeline.</td>
    </tr>
    <tr class="a">
@@ -276,7 +276,7 @@
 <div>
  <h2 id="project-structure"><a href="#project-structure"></a><a id="project-structure"></a>Project Structure</h2>
  <div>
-  <pre copy-to-clipboard="">example-project/
+  <pre copy-to-clipboard="">project-example/
 ├── pom.xml                              <i class="conum" data-value="1"></i><b>(1)</b>
 ├── src/
 │   ├── main/java/                       <i class="conum" data-value="2"></i><b>(2)</b>
@@ -289,7 +289,7 @@
 │       ├── resources/css/site.css
 │       └── site.xml
 └── target/
-    ├── example-project-1-SNAPSHOT.jar   <i class="conum" data-value="7"></i><b>(7)</b>
+    ├── project-example-1-SNAPSHOT.jar   <i class="conum" data-value="7"></i><b>(7)</b>
     └── generated-docs/
         ├── html/                        <i class="conum" data-value="8"></i><b>(8)</b>
         ├── pdf-prawn/                   <i class="conum" data-value="9"></i><b>(9)</b>
@@ -327,7 +327,7 @@ mvn site</code></pre>
 </div>
 <div>
  <h2 id="inheritance-pattern"><a href="#inheritance-pattern"></a><a id="inheritance-pattern"></a>Inheritance Pattern</h2>
- <p><code>example-project</code> inherits <code>ike-parent</code> directly:</p>
+ <p><code>project-example</code> inherits <code>ike-parent</code> directly:</p>
  <div class="source">
   <pre class="prettyprint" copy-to-clipboard=""><code><span class="tag">&lt;parent&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>network.ike.platform<span class="tag">&lt;/groupId&gt;</span>
@@ -374,7 +374,7 @@ mvn site</code></pre>
 </div>
 <div>
  <h2 id="not-published-to-maven-central"><a href="#not-published-to-maven-central"></a><a id="not-published-to-maven-central"></a>Not published to Maven Central</h2>
- <p><code>example-project</code> is a reference template, not a library. Its releases are tagged on GitHub and deployed to the IKE Nexus, but it is deliberately <strong>not</strong> published to Maven Central — nothing should ever declare a dependency on it. You consume this project by reading it and copying its structure into a project of your own. The IKE foundation (<code>ike-base-parent</code>, <code>ike-tooling</code>, <code>ike-docs</code>, <code>ike-platform</code>) is the part published to Central and meant to be inherited; see <a href="https://ike.network/">the IKE Network landing page</a><sup class="visible-print-inline">[4]</sup> for the foundation/examples split.</p>
+ <p><code>project-example</code> is a reference template, not a library. Its releases are tagged on GitHub and deployed to the IKE Nexus, but it is deliberately <strong>not</strong> published to Maven Central — nothing should ever declare a dependency on it. You consume this project by reading it and copying its structure into a project of your own. The IKE foundation (<code>ike-base-parent</code>, <code>ike-tooling</code>, <code>ike-docs</code>, <code>ike-platform</code>) is the part published to Central and meant to be inherited; see <a href="https://ike.network/">the IKE Network landing page</a><sup class="visible-print-inline">[4]</sup> for the foundation/examples split.</p>
 </div>
 <div>
  <h2 id="resources"><a href="#resources"></a><a id="resources"></a>Resources</h2>
@@ -388,7 +388,7 @@ mvn site</code></pre>
   <tbody>
    <tr class="b">
     <td style="text-align: left;">Source repository</td>
-    <td><a href="https://github.com/IKE-Network/example-project" class="bare externalLink">https://github.com/IKE-Network/example-project</a><sup class="visible-print-inline">[5]</sup></td>
+    <td><a href="https://github.com/IKE-Network/project-example" class="bare">https://github.com/IKE-Network/project-example</a><sup class="visible-print-inline">[5]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">Cross-project issue tracker</td>
@@ -435,13 +435,13 @@ mvn site</code></pre>
 								<li>[2] https://ike.network/workspace-example/</li>
 								<li>[3] https://github.com/IKE-Network/ike-issues/issues/321</li>
 								<li>[4] https://ike.network/</li>
-								<li>[5] https://github.com/IKE-Network/example-project</li>
+								<li>[5] https://github.com/IKE-Network/project-example</li>
 								<li>[6] https://github.com/IKE-Network/ike-issues</li>
 								<li>[7] https://ike.network/ike-platform/</li>
 								<li>[8] https://ike.network/integration-tests-example/</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-05-20 20:21:37 -0700</strong></div>
+<div class="date">Date: <strong>2026-05-20 20:34:50 -0700</strong></div>
 						</div>
 						</div>
 					</div>

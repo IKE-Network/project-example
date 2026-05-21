@@ -4,14 +4,14 @@ date_modified: 2026-05-20
 canonical_url: https://github.com/IKE-Network/project-example/index.html
 ---
 
-# example-project
+# project-example
 
 A standalone reference project demonstrating an IKE consumer that ships **both compiled Java code and rendered AsciiDoc documentation** through a single `mvn verify` cycle. Inherits `ike-parent` from `ike-platform` and exercises the doc pipeline contributed by `ike-docs`.
 
 | Coordinate | Value |
 | --- | --- |
 | Group ID | `network.ike.examples` |
-| Artifact | `example-project` |
+| Artifact | `project-example` |
 | Packaging | `jar` (plus AsciiDoc doc-pipeline activated by `src/docs/asciidoc`) |
 | Parent | `network.ike.platform:ike-parent` |
 | Java version | 25 |
@@ -22,7 +22,7 @@ This project is the canonical template for an **IKE library that ships both code
 
 | Template | When to copy from it |
 | --- | --- |
-| `example-project` | You’re shipping a JAR (a library, a CLI, a service) AND want rendered docs alongside it. Builds run a Java compile + test cycle plus the AsciiDoc → HTML/PDF pipeline. |
+| `project-example` | You’re shipping a JAR (a library, a CLI, a service) AND want rendered docs alongside it. Builds run a Java compile + test cycle plus the AsciiDoc → HTML/PDF pipeline. |
 | [doc-example](https://ike.network/doc-example/)[1] | You’re shipping a published document as the primary deliverable. No Java compile path; uses `<packaging>pom</packaging>` and ships the source as the `adoc` classifier (post-`IKE-Network/ike-issues#321`). |
 
 For the workspace-aggregator template (one repo orchestrating multiple consumers via `ws:*` goals), see [workspace-example](https://ike.network/workspace-example/)[2].
@@ -38,7 +38,7 @@ ike-tooling -> ike-docs -> ike-platform -> { doc-example, project-example, integ
 ## [#project-structure](#project-structure)Project Structure
 
 ```
-example-project/
+project-example/
 ├── pom.xml                              (1)
 ├── src/
 │   ├── main/java/                       (2)
@@ -51,7 +51,7 @@ example-project/
 │       ├── resources/css/site.css
 │       └── site.xml
 └── target/
-    ├── example-project-1-SNAPSHOT.jar   (7)
+    ├── project-example-1-SNAPSHOT.jar   (7)
     └── generated-docs/
         ├── html/                        (8)
         ├── pdf-prawn/                   (9)
@@ -81,7 +81,7 @@ mvn site
 
 ## [#inheritance-pattern](#inheritance-pattern)Inheritance Pattern
 
-`example-project` inherits `ike-parent` directly:
+`project-example` inherits `ike-parent` directly:
 
 ```
 <parent>
@@ -109,13 +109,13 @@ When creating a new IKE library, copy the following from this template:
 
 ## [#not-published-to-maven-central](#not-published-to-maven-central)Not published to Maven Central
 
-`example-project` is a reference template, not a library. Its releases are tagged on GitHub and deployed to the IKE Nexus, but it is deliberately **not** published to Maven Central — nothing should ever declare a dependency on it. You consume this project by reading it and copying its structure into a project of your own. The IKE foundation (`ike-base-parent`, `ike-tooling`, `ike-docs`, `ike-platform`) is the part published to Central and meant to be inherited; see [the IKE Network landing page](https://ike.network/)[4] for the foundation/examples split.
+`project-example` is a reference template, not a library. Its releases are tagged on GitHub and deployed to the IKE Nexus, but it is deliberately **not** published to Maven Central — nothing should ever declare a dependency on it. You consume this project by reading it and copying its structure into a project of your own. The IKE foundation (`ike-base-parent`, `ike-tooling`, `ike-docs`, `ike-platform`) is the part published to Central and meant to be inherited; see [the IKE Network landing page](https://ike.network/)[4] for the foundation/examples split.
 
 ## [#resources](#resources)Resources
 
 | Resource | URL |
 | --- | --- |
-| Source repository | [https://github.com/IKE-Network/example-project](https://github.com/IKE-Network/example-project)[5] |
+| Source repository | [https://github.com/IKE-Network/project-example](https://github.com/IKE-Network/project-example)[5] |
 | Cross-project issue tracker | [https://github.com/IKE-Network/ike-issues](https://github.com/IKE-Network/ike-issues)[6] |
 | IKE Network landing page | [https://ike.network/](https://ike.network/)[4] |
 | IKE Platform (parent POM, BOM, workspace plugin) | [https://ike.network/ike-platform/](https://ike.network/ike-platform/)[7] |

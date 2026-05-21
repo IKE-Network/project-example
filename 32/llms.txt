@@ -5,7 +5,7 @@
 
 ## Documentation
 
-- [example-project](https://github.com/IKE-Network/project-example/index.html.md)
+- [project-example](https://github.com/IKE-Network/project-example/index.html.md)
 - [Dependencies (SBOM)](https://github.com/IKE-Network/project-example/dependencies.html.md)
 
 ## Other
