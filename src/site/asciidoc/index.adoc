@@ -1,4 +1,4 @@
-= example-project
+= project-example
 :icons: font
 :source-highlighter: coderay
 
@@ -12,7 +12,7 @@ through a single `mvn verify` cycle. Inherits `ike-parent` from
 |===
 | Coordinate | Value
 | Group ID    | `network.ike.examples`
-| Artifact    | `example-project`
+| Artifact    | `project-example`
 | Packaging   | `jar` (plus AsciiDoc doc-pipeline activated by `src/docs/asciidoc`)
 | Parent      | `network.ike.platform:ike-parent`
 | Java version | 25
@@ -30,7 +30,7 @@ shapes of IKE consumer:
 |===
 | Template | When to copy from it
 
-| `example-project`
+| `project-example`
 | You're shipping a JAR (a library, a CLI, a service) AND want
   rendered docs alongside it. Builds run a Java compile + test
   cycle plus the AsciiDoc → HTML/PDF pipeline.
@@ -67,7 +67,7 @@ in favor of a classifier-canonical doc shape
 == Project Structure
 
 ----
-example-project/
+project-example/
 ├── pom.xml                              <1>
 ├── src/
 │   ├── main/java/                       <2>
@@ -80,7 +80,7 @@ example-project/
 │       ├── resources/css/site.css
 │       └── site.xml
 └── target/
-    ├── example-project-1-SNAPSHOT.jar   <7>
+    ├── project-example-1-SNAPSHOT.jar   <7>
     └── generated-docs/
         ├── html/                        <8>
         ├── pdf-prawn/                   <9>
@@ -123,7 +123,7 @@ mvn site
 
 == Inheritance Pattern
 
-`example-project` inherits `ike-parent` directly:
+`project-example` inherits `ike-parent` directly:
 
 [source,xml]
 ----
@@ -178,7 +178,7 @@ template:
 
 == Not published to Maven Central
 
-`example-project` is a reference template, not a library. Its
+`project-example` is a reference template, not a library. Its
 releases are tagged on GitHub and deployed to the IKE Nexus, but it
 is deliberately *not* published to Maven Central — nothing should
 ever declare a dependency on it. You consume this project by reading
@@ -195,7 +195,7 @@ for the foundation/examples split.
 | Resource | URL
 
 | Source repository
-| https://github.com/IKE-Network/example-project
+| https://github.com/IKE-Network/project-example
 
 | Cross-project issue tracker
 | https://github.com/IKE-Network/ike-issues
