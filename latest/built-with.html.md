@@ -6,7 +6,7 @@ canonical_url: https://github.com/IKE-Network/project-example/built-with.html
 
 # Built With
 
-Open-source software that `project-example` 32 depends on, links against, ships within, or invokes at runtime.
+Open-source software that `project-example` 33-SNAPSHOT depends on, links against, ships within, or invokes at runtime.
 
 Three layers of attribution ship with each release:
 

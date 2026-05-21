@@ -1,4 +1,4 @@
-# example-project
+# project-example
 
 > Example Java project demonstrating IKE documentation pipeline
 > integration with Java source, tests, and Koncept macros.
