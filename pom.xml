@@ -35,7 +35,7 @@
 
     <groupId>network.ike.examples</groupId>
     <artifactId>project-example</artifactId>
-    <version>32-SNAPSHOT</version>
+    <version>32</version>
     <packaging>jar</packaging>
 
     <name>IKE Project Example</name>
