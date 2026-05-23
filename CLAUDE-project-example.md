@@ -47,7 +47,7 @@ that ships both compiled code and documentation through a single
 ### Release Cascade Position
 
 ```
-ike-tooling → ike-docs → ike-platform → [doc-example, project-example, integration-tests-example] → workspace-example
+ike-tooling → ike-docs → ike-platform → [doc-example, project-example, integration-tests-example] → workspace-reactor-example
 ```
 
 ## Key Build Commands

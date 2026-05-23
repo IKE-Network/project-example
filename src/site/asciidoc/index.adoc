@@ -43,13 +43,13 @@ shapes of IKE consumer:
 
 For the workspace-aggregator template (one repo orchestrating
 multiple consumers via `ws:*` goals), see
-link:https://ike.network/workspace-example/[workspace-example].
+link:https://ike.network/workspace-reactor-example/[workspace-reactor-example].
 
 == Release Cascade Position
 
 [source]
 ----
-ike-tooling -> ike-docs -> ike-platform -> { doc-example, project-example, integration-tests-example } -> workspace-example
+ike-tooling -> ike-docs -> ike-platform -> { doc-example, project-example, integration-tests-example } -> workspace-reactor-example
 ----
 
 `project-example` releases after `ike-platform` (whose `ike-parent`
@@ -210,7 +210,7 @@ for the foundation/examples split.
 | https://ike.network/doc-example/
 
 | Sibling: workspace-aggregator template
-| https://ike.network/workspace-example/
+| https://ike.network/workspace-reactor-example/
 
 | Sibling: integration-test harness
 | https://ike.network/integration-tests-example/

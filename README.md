@@ -273,7 +273,7 @@ steps:
 ## Links
 
 - **Documentation:** [`https://ike.network/project-example/`](https://ike.network/project-example/) (the live published Maven Site; a local copy lands at `target/site/` after `mvn site:site`)
-- **Workspace:** [`IKE-Network/workspace-example`](https://ike.network/workspace-example/) — clone the workspace to build project-example alongside doc-example and integration-tests-example
+- **Workspace:** [`IKE-Network/workspace-reactor-example`](https://ike.network/workspace-reactor-example/) — clone the workspace to build project-example alongside doc-example and integration-tests-example
 - **Foundation sites:**
   [`ike-platform`](https://ike.network/ike-platform/) (parent POM, BOM, workspace plugin) ·
   [`ike-docs`](https://ike.network/ike-docs/) (documentation plumbing) ·
