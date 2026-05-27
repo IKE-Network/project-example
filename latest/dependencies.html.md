@@ -1,16 +1,16 @@
 ---
-date_published: 2026-05-20
-date_modified: 2026-05-20
-canonical_url: https://github.com/IKE-Network/project-example/dependencies.html
+date_published: 2026-05-26
+date_modified: 2026-05-26
+canonical_url: https://ike.network/project-example/dependencies.html
 ---
 
 # Dependencies (SBOM)
 
-Full transitive dependency graph for `project-example` 33-SNAPSHOT, generated from [bom.json](bom.json)[1] (CycloneDX 1.6) at build time. Same SBOM source as the SPDX-grouped [licenses.html](licenses.html)[2] and the curated [built-with.html](built-with.html)[3] — three views of the same data.
+Full transitive dependency graph for `project-example` 33, generated from [bom.json](bom.json)[1] (CycloneDX 1.6) at build time. Same SBOM source as the SPDX-grouped [licenses.html](licenses.html)[2] and the curated [built-with.html](built-with.html)[3] — three views of the same data.
 
 ## [#summary](#summary)Summary
 
-| Total components | 9 |
+| Total components | 10 |
 | --- | --- |
 | Distinct license expressions | 3 |
 
@@ -20,21 +20,22 @@ Sorted by group, artifact, version. Click [bom.json](bom.json)[1] for the raw ma
 
 | Group | Artifact | Version | License | Type |
 | --- | --- | --- | --- | --- |
-| `network.ike.docs` | `docbook-xsl` | `49` | `Apache-2.0 OR MIT License (DocBook XSL Stylesheets)` | library |
-| `network.ike.docs` | `ike-doc-resources` | `49` | `Apache-2.0` | library |
-| `network.ike.docs` | `minimal-fonts` | `49` | `OFL-1.1` | library |
-| `network.ike.tooling` | `ike-build-standards` | `193` | `Apache-2.0` | library |
-| `network.ike.tooling` | `ike-build-standards` | `193` | `Apache-2.0` | library |
-| `network.ike.tooling` | `ike-build-standards` | `193` | `Apache-2.0` | library |
-| `network.ike.tooling` | `ike-build-standards` | `193` | `Apache-2.0` | library |
-| `network.ike.tooling` | `ike-build-standards` | `193` | `Apache-2.0` | library |
-| `network.ike.tooling` | `ike-build-standards` | `193` | `Apache-2.0` | library |
+| `network.ike` | `ike-base-parent` | `15` | `Apache-2.0` | library |
+| `network.ike.docs` | `docbook-xsl` | `65` | `Apache-2.0 OR MIT License (DocBook XSL Stylesheets)` | library |
+| `network.ike.docs` | `ike-doc-resources` | `65` | `Apache-2.0` | library |
+| `network.ike.docs` | `minimal-fonts` | `65` | `OFL-1.1` | library |
+| `network.ike.tooling` | `ike-build-standards` | `217` | `Apache-2.0` | library |
+| `network.ike.tooling` | `ike-build-standards` | `217` | `Apache-2.0` | library |
+| `network.ike.tooling` | `ike-build-standards` | `217` | `Apache-2.0` | library |
+| `network.ike.tooling` | `ike-build-standards` | `217` | `Apache-2.0` | library |
+| `network.ike.tooling` | `ike-build-standards` | `217` | `Apache-2.0` | library |
+| `network.ike.tooling` | `ike-build-standards` | `217` | `Apache-2.0` | library |
 
 ## [#download](#download)Download
 
 - [Software Bill of Materials (CycloneDX, JSON)](bom.json)[1] — raw machine-readable form. Includes purls, hashes, and dependency-graph edges that this page summarizes.
 - [bom.xml](bom.xml)[4] — same content in XML.
-- As a Maven artifact: pull `project-example:​33-SNAPSHOT` with `<classifier>cyclonedx</classifier><type>json</type>` from Nexus / Maven Central.
+- As a Maven artifact: pull `project-example:​33` with `<classifier>cyclonedx</classifier><type>json</type>` from Nexus / Maven Central.
 
 ## [#see-also](#see-also)See also
 

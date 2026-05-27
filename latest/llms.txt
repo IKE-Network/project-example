@@ -5,21 +5,21 @@
 
 ## Documentation
 
-- [project-example](https://github.com/IKE-Network/project-example/index.html.md)
-- [Dependencies (SBOM)](https://github.com/IKE-Network/project-example/dependencies.html.md)
+- [project-example](https://ike.network/project-example/index.html.md)
+- [Dependencies (SBOM)](https://ike.network/project-example/dependencies.html.md)
 
 ## Other
 
-- [Licenses (SPDX)](https://github.com/IKE-Network/project-example/licenses.html.md)
-- [Built With](https://github.com/IKE-Network/project-example/built-with.html.md)
+- [Licenses (SPDX)](https://ike.network/project-example/licenses.html.md)
+- [Built With](https://ike.network/project-example/built-with.html.md)
 
 ## Reports
 
-- [Project Summary](https://github.com/IKE-Network/project-example/summary.html.md)
-- [Maven Coordinates](https://github.com/IKE-Network/project-example/dependency-info.html.md)
-- [Project Dependency Management](https://github.com/IKE-Network/project-example/dependency-management.html.md)
-- [Project Plugins](https://github.com/IKE-Network/project-example/plugins.html.md)
-- [Project Plugin Management](https://github.com/IKE-Network/project-example/plugin-management.html.md)
-- [Project Distribution Management](https://github.com/IKE-Network/project-example/distribution-management.html.md)
-- [Project Information](https://github.com/IKE-Network/project-example/project-info.html.md)
-- [Generated Reports](https://github.com/IKE-Network/project-example/project-reports.html.md)
+- [Project Summary](https://ike.network/project-example/summary.html.md)
+- [Maven Coordinates](https://ike.network/project-example/dependency-info.html.md)
+- [Project Dependency Management](https://ike.network/project-example/dependency-management.html.md)
+- [Project Plugins](https://ike.network/project-example/plugins.html.md)
+- [Project Plugin Management](https://ike.network/project-example/plugin-management.html.md)
+- [Project Distribution Management](https://ike.network/project-example/distribution-management.html.md)
+- [Project Information](https://ike.network/project-example/project-info.html.md)
+- [Generated Reports](https://ike.network/project-example/project-reports.html.md)

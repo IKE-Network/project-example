@@ -1,12 +1,12 @@
 ---
-date_published: 2026-05-20
-date_modified: 2026-05-20
-canonical_url: https://github.com/IKE-Network/project-example/built-with.html
+date_published: 2026-05-26
+date_modified: 2026-05-26
+canonical_url: https://ike.network/project-example/built-with.html
 ---
 
 # Built With
 
-Open-source software that `project-example` 33-SNAPSHOT depends on, links against, ships within, or invokes at runtime.
+Open-source software that `project-example` 33 depends on, links against, ships within, or invokes at runtime.
 
 Three layers of attribution ship with each release:
 
@@ -87,10 +87,10 @@ Direct dependencies of this module, grouped by SPDX expression. Generated from `
 
 | SPDX Expression | Components |
 | --- | --- |
-| `Apache-2.0` | 7 |
+| `Apache-2.0` | 8 |
 | `Apache-2.0 OR MIT License (DocBook XSL Stylesheets)` | 1 |
 | `OFL-1.1` | 1 |
-| **Total** | **9** |
+| **Total** | **10** |
 
 For full per-component detail (group, artifact, version, hashes, transitive deps), see [bom.json](bom.json)[1] or [licenses.html](licenses.html)[2].
 

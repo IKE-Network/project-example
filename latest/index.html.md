@@ -1,7 +1,7 @@
 ---
-date_published: 2026-05-20
-date_modified: 2026-05-20
-canonical_url: https://github.com/IKE-Network/project-example/index.html
+date_published: 2026-05-26
+date_modified: 2026-05-26
+canonical_url: https://ike.network/project-example/index.html
 ---
 
 # project-example
@@ -25,15 +25,15 @@ This project is the canonical template for an **IKE library that ships both code
 | `project-example` | You’re shipping a JAR (a library, a CLI, a service) AND want rendered docs alongside it. Builds run a Java compile + test cycle plus the AsciiDoc → HTML/PDF pipeline. |
 | [doc-example](https://ike.network/doc-example/)[1] | You’re shipping a published document as the primary deliverable. No Java compile path; uses `<packaging>pom</packaging>` and ships the source as the `adoc` classifier (post-`IKE-Network/ike-issues#321`). |
 
-For the workspace-aggregator template (one repo orchestrating multiple consumers via `ws:*` goals), see [workspace-example](https://ike.network/workspace-example/)[2].
+For the workspace-aggregator template (one repo orchestrating multiple consumers via `ws:*` goals), see [workspace-reactor-example](https://ike.network/workspace-reactor-example/)[2].
 
 ## [#release-cascade-position](#release-cascade-position)Release Cascade Position
 
 ```
-ike-tooling -> ike-docs -> ike-platform -> { doc-example, project-example, integration-tests-example } -> workspace-example
+ike-tooling -> ike-docs -> ike-platform -> { doc-example, project-example, integration-tests-example } -> workspace-reactor-example
 ```
 
-`project-example` releases after `ike-platform` (whose `ike-parent` this project consumes) and after `ike-docs` (whose `ike-doc-maven-plugin` is declared as a regular managed plugin in `ike-parent` via `49`; the documentation pipeline activates through a profile when `src/docs/asciidoc/` exists). Earlier revisions used the `<extensions>true</extensions>` mechanism to register a custom `<packaging>ike-doc</packaging>` type at literal versions; that machinery was retired in [ike-issues#321](https://github.com/IKE-Network/ike-issues/issues/321)[3] in favor of a classifier-canonical doc shape (`<classifier>adoc</classifier><type>zip</type>`).
+`project-example` releases after `ike-platform` (whose `ike-parent` this project consumes) and after `ike-docs` (whose `ike-doc-maven-plugin` is declared as a regular managed plugin in `ike-parent` via `65`; the documentation pipeline activates through a profile when `src/docs/asciidoc/` exists). Earlier revisions used the `<extensions>true</extensions>` mechanism to register a custom `<packaging>ike-doc</packaging>` type at literal versions; that machinery was retired in [ike-issues#321](https://github.com/IKE-Network/ike-issues/issues/321)[3] in favor of a classifier-canonical doc shape (`<classifier>adoc</classifier><type>zip</type>`).
 
 ## [#project-structure](#project-structure)Project Structure
 
@@ -91,7 +91,7 @@ mvn site
 </parent>
 ```
 
-After inheriting, the project gets — for free — Java 25 compilation, GPG signing via Bouncy Castle, JaCoCo coverage, the AsciiDoc documentation pipeline, and dependency-version management for the IKE ecosystem. `ike-maven-plugin` and `ike-doc-maven-plugin` are declared as ordinary managed plugins (no `extensions=true`, post-#321) and resolve via property indirection (`193`, `49`).
+After inheriting, the project gets — for free — Java 25 compilation, GPG signing via Bouncy Castle, JaCoCo coverage, the AsciiDoc documentation pipeline, and dependency-version management for the IKE ecosystem. `ike-maven-plugin` and `ike-doc-maven-plugin` are declared as ordinary managed plugins (no `extensions=true`, post-#321) and resolve via property indirection (`217`, `65`).
 
 The doc pipeline activates automatically when `src/docs/asciidoc/` exists. No `<plugins>` block in this project’s POM is needed for documentation — the parent profile handles it.
 
@@ -120,5 +120,5 @@ When creating a new IKE library, copy the following from this template:
 | IKE Network landing page | [https://ike.network/](https://ike.network/)[4] |
 | IKE Platform (parent POM, BOM, workspace plugin) | [https://ike.network/ike-platform/](https://ike.network/ike-platform/)[7] |
 | Sibling: doc-only template | [https://ike.network/doc-example/](https://ike.network/doc-example/)[1] |
-| Sibling: workspace-aggregator template | [https://ike.network/workspace-example/](https://ike.network/workspace-example/)[2] |
+| Sibling: workspace-aggregator template | [https://ike.network/workspace-reactor-example/](https://ike.network/workspace-reactor-example/)[2] |
 | Sibling: integration-test harness | [https://ike.network/integration-tests-example/](https://ike.network/integration-tests-example/)[8] |
