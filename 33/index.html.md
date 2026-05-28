@@ -1,6 +1,6 @@
 ---
-date_published: 2026-05-26
-date_modified: 2026-05-26
+date_published: 2026-05-27
+date_modified: 2026-05-27
 canonical_url: https://ike.network/project-example/index.html
 ---
 
@@ -33,7 +33,7 @@ For the workspace-aggregator template (one repo orchestrating multiple consumers
 ike-tooling -> ike-docs -> ike-platform -> { doc-example, project-example, integration-tests-example } -> workspace-reactor-example
 ```
 
-`project-example` releases after `ike-platform` (whose `ike-parent` this project consumes) and after `ike-docs` (whose `ike-doc-maven-plugin` is declared as a regular managed plugin in `ike-parent` via `65`; the documentation pipeline activates through a profile when `src/docs/asciidoc/` exists). Earlier revisions used the `<extensions>true</extensions>` mechanism to register a custom `<packaging>ike-doc</packaging>` type at literal versions; that machinery was retired in [ike-issues#321](https://github.com/IKE-Network/ike-issues/issues/321)[3] in favor of a classifier-canonical doc shape (`<classifier>adoc</classifier><type>zip</type>`).
+`project-example` releases after `ike-platform` (whose `ike-parent` this project consumes) and after `ike-docs` (whose `ike-doc-maven-plugin` is declared as a regular managed plugin in `ike-parent` via `66`; the documentation pipeline activates through a profile when `src/docs/asciidoc/` exists). Earlier revisions used the `<extensions>true</extensions>` mechanism to register a custom `<packaging>ike-doc</packaging>` type at literal versions; that machinery was retired in [ike-issues#321](https://github.com/IKE-Network/ike-issues/issues/321)[3] in favor of a classifier-canonical doc shape (`<classifier>adoc</classifier><type>zip</type>`).
 
 ## [#project-structure](#project-structure)Project Structure
 
@@ -91,7 +91,7 @@ mvn site
 </parent>
 ```
 
-After inheriting, the project gets — for free — Java 25 compilation, GPG signing via Bouncy Castle, JaCoCo coverage, the AsciiDoc documentation pipeline, and dependency-version management for the IKE ecosystem. `ike-maven-plugin` and `ike-doc-maven-plugin` are declared as ordinary managed plugins (no `extensions=true`, post-#321) and resolve via property indirection (`217`, `65`).
+After inheriting, the project gets — for free — Java 25 compilation, GPG signing via Bouncy Castle, JaCoCo coverage, the AsciiDoc documentation pipeline, and dependency-version management for the IKE ecosystem. `ike-maven-plugin` and `ike-doc-maven-plugin` are declared as ordinary managed plugins (no `extensions=true`, post-#321) and resolve via property indirection (`217`, `66`).
 
 The doc pipeline activates automatically when `src/docs/asciidoc/` exists. No `<plugins>` block in this project’s POM is needed for documentation — the parent profile handles it.
 
