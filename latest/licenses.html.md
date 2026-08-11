@@ -1,21 +1,22 @@
 ---
-date_published: 2026-05-27
-date_modified: 2026-05-27
+date_published: 2026-08-10
+date_modified: 2026-08-10
 canonical_url: https://ike.network/project-example/licenses.html
 ---
 
 # Licenses (SPDX)
 
-Licenses for declared dependencies of `project-example` 34-SNAPSHOT, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
+Licenses for declared dependencies of `project-example` 34, grouped by SPDX expression. Rendered from `[bom.json](bom.json)[1]` (CycloneDX) at `pre-site` phase by `ike:render-spdx-licenses` (ike-issues#335).
 
 ## [#summary](#summary)Summary
 
 | SPDX Expression | Components |
 | --- | --- |
-| `Apache-2.0` | 8 |
+| `Apache-2.0` | 9 |
 | `Apache-2.0 OR MIT License (DocBook XSL Stylesheets)` | 1 |
+| `MIT` | 1 |
 | `OFL-1.1` | 1 |
-| **Total** | **10** |
+| **Total** | **12** |
 
 ## [#apache-2-0](#apache-2-0)Apache-2.0
 
@@ -24,30 +25,39 @@ Reference: [Apache-2.0 on spdx.org](https://spdx.org/licenses/Apache-2.0.html)[2
 | Group | Artifact | Version |
 | --- | --- | --- |
 | `network.ike` | `ike-base-parent` | `15` |
-| `network.ike.docs` | `ike-doc-resources` | `65` |
-| `network.ike.tooling` | `ike-build-standards` | `217` |
-| `network.ike.tooling` | `ike-build-standards` | `217` |
-| `network.ike.tooling` | `ike-build-standards` | `217` |
-| `network.ike.tooling` | `ike-build-standards` | `217` |
-| `network.ike.tooling` | `ike-build-standards` | `217` |
-| `network.ike.tooling` | `ike-build-standards` | `217` |
+| `network.ike.docs` | `ike-doc-resources` | `102` |
+| `network.ike.examples` | `doc-example` | `34` |
+| `network.ike.tooling` | `ike-build-standards` | `244` |
+| `network.ike.tooling` | `ike-build-standards` | `244` |
+| `network.ike.tooling` | `ike-build-standards` | `244` |
+| `network.ike.tooling` | `ike-build-standards` | `244` |
+| `network.ike.tooling` | `ike-build-standards` | `244` |
+| `network.ike.tooling` | `ike-build-standards` | `244` |
 
 ## [#apache-2-0-or-mit-license-docbook-xsl-stylesheets](#apache-2-0-or-mit-license-docbook-xsl-stylesheets)Apache-2.0 OR MIT License (DocBook XSL Stylesheets)
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `docbook-xsl` | `65` |
+| `network.ike.docs` | `docbook-xsl` | `102` |
 
-## [#ofl-1-1](#ofl-1-1)OFL-1.1
+## [#mit](#mit)MIT
 
-Reference: [OFL-1.1 on spdx.org](https://spdx.org/licenses/OFL-1.1.html)[3]
+Reference: [MIT on spdx.org](https://spdx.org/licenses/MIT.html)[3]
 
 | Group | Artifact | Version |
 | --- | --- | --- |
-| `network.ike.docs` | `minimal-fonts` | `65` |
+| `org.slf4j` | `slf4j-api` | `2.0.17` |
+
+## [#ofl-1-1](#ofl-1-1)OFL-1.1
+
+Reference: [OFL-1.1 on spdx.org](https://spdx.org/licenses/OFL-1.1.html)[4]
+
+| Group | Artifact | Version |
+| --- | --- | --- |
+| `network.ike.docs` | `minimal-fonts` | `102` |
 
 ## [#see-also](#see-also)See also
 
 - [Software Bill of Materials (CycloneDX)](bom.json)[1] — the canonical machine-readable inventory this page is derived from.
-- [Third-Party Notices](THIRD_PARTY_NOTICES.html)[4] — curated companion that covers components mechanical reports can’t see (Maven Site skin, external services, fonts inside artifacts).
-- [Dependency Info](dependency-info.html)[5] — consumption snippet for this module.
+- [Third-Party Notices](THIRD_PARTY_NOTICES.html)[5] — curated companion that covers components mechanical reports can’t see (Maven Site skin, external services, fonts inside artifacts).
+- [Dependency Info](dependency-info.html)[6] — consumption snippet for this module.
