@@ -81,6 +81,13 @@
              IKE-Network/ike-issues#545, #546. Distinguishes worked
              examples from foundation (sentry-green) under ike.network. -->
         <ike.site.deployment>ike-network-example</ike.site.deployment>
+        <!-- Intra-workspace upstream: the documentation project this
+             example builds against. The property is the workspace
+             cascade's tracking point — ws:align converges it, a release
+             of doc-example cascade-pulls this project, and the release
+             SNAPSHOT gate refuses to ship while it points at a
+             SNAPSHOT (IKE-Network/ike-issues#501). -->
+        <doc-example.version>34-SNAPSHOT</doc-example.version>
     </properties>
 
     <distributionManagement>
@@ -91,6 +98,20 @@
     </distributionManagement>
 
     <dependencies>
+        <!-- Intra-workspace knowledge dependency (#501): this example
+             consumes its sibling documentation project, giving the
+             workspace a real doc-example → project-example edge for the
+             release cascade to exercise. pom-type: doc-example is the
+             classifier-canonical doc shape (#321), so the POM artifact
+             is its resolvable coordinate. -->
+        <dependency>
+            <groupId>network.ike.examples</groupId>
+            <artifactId>doc-example</artifactId>
+            <version>${doc-example.version}</version>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- IKE Build Standards — Claude instruction files.
              Version managed by ike-parent.
              scope=provided: not needed at runtime, only unpacked at validate. -->
