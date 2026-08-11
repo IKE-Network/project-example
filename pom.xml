@@ -87,7 +87,7 @@
              of doc-example cascade-pulls this project, and the release
              SNAPSHOT gate refuses to ship while it points at a
              SNAPSHOT (IKE-Network/ike-issues#501). -->
-        <doc-example.version>34</doc-example.version>
+        <doc-example.version>35</doc-example.version>
     </properties>
 
     <distributionManagement>
